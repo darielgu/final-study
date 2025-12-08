@@ -11,7 +11,7 @@ type Question = {
   choices: Record<ChoiceKey, string>;
   correct_answer: ChoiceKey;
   why_correct: string;
-  why_incorrect: Record<ChoiceKey, string>;
+  why_incorrect: Partial<Record<ChoiceKey, string>>;
 };
 
 type Category = {
@@ -29,7 +29,7 @@ type EnrichedQuestion = Question & { category: string };
 
 const quizOrder = ["quiz1", "quiz2", "quiz3"];
 
-const quizBank = bankData as QuizBank;
+const quizBank = bankData as unknown as QuizBank;
 
 const formatQuizLabel = (id: string) => id.replace("quiz", "Quiz ");
 
