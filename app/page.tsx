@@ -109,7 +109,7 @@ export default function Home() {
   const noQuestionsLoaded = activeQuizId && questions.length === 0;
 
   return (
-    <div className="min-h-screen bg-slate-950 text-slate-50">
+    <div className="min-h-screen bg-slate-900 text-slate-50">
       <div className="mx-auto flex min-h-screen max-w-5xl flex-col gap-6 px-4 py-10 sm:px-8 lg:px-12 ">
         <section className="flex flex-col gap-4 rounded-3xl border border-slate-800 bg-slate-900 p-6 shadow-md">
           <div className="flex items-center justify-between gap-3">
@@ -238,11 +238,11 @@ export default function Home() {
                           <div className="flex h-9 w-9 items-center justify-center rounded-xl border border-slate-800 bg-slate-900 text-sm text-slate-200">
                             {isPicked ? "OK" : ">"}
                           </div>
-                    {submitted && (
-                      <div className="pointer-events-none absolute -top-3 right-3 translate-y-[-100%] rounded-xl border border-slate-700 bg-slate-800 px-3 py-2 text-sm font-semibold text-slate-100 opacity-0 shadow-lg transition duration-200 group-hover:opacity-100">
-                        {hoverCopy(key)}
-                      </div>
-                    )}
+                          {submitted && (
+                            <div className="pointer-events-none absolute -top-3 right-3 translate-y-[-100%] rounded-xl border border-slate-700 bg-slate-800 px-3 py-2 text-sm font-semibold text-slate-100 opacity-0 shadow-lg transition duration-200 group-hover:opacity-100">
+                              {hoverCopy(key)}
+                            </div>
+                          )}
                         </button>
                       );
                     }
