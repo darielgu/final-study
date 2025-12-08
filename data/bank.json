@@ -1,0 +1,3314 @@
+{
+  "quiz1": {
+    "categories": [
+      {
+        "category": "Git & GitHub",
+        "questions": [
+          {
+            "number": 1,
+            "question": "What Git command is used to create a new local repository?",
+            "choices": {
+              "a": "git start",
+              "b": "git init",
+              "c": "git create",
+              "d": "git new"
+            },
+            "correct_answer": "b",
+            "why_correct": "git init initializes a new Git repository in the current directory.",
+            "why_incorrect": {
+              "a": "git start is not a valid Git command.",
+              "c": "git create is not an actual Git command.",
+              "d": "git new is not a recognized Git command."
+            }
+          },
+          {
+            "number": 2,
+            "question": "Which command downloads a repository from GitHub to your local machine?",
+            "choices": {
+              "a": "git download",
+              "b": "git clone",
+              "c": "git fetch",
+              "d": "git pull"
+            },
+            "correct_answer": "b",
+            "why_correct": "git clone copies a remote repository and creates a new local repository.",
+            "why_incorrect": {
+              "a": "git download is not a standard Git command.",
+              "c": "git fetch only retrieves changes into the local repo; it does not create a new one.",
+              "d": "git pull updates an existing local repo from a remote; it does not clone a new one."
+            }
+          },
+          {
+            "number": 3,
+            "question": "What is the purpose of a .gitignore file?",
+            "choices": {
+              "a": "To list contributors to the repository",
+              "b": "To specify files that Git should ignore",
+              "c": "To define GitHub Actions workflows",
+              "d": "To store Git configuration settings"
+            },
+            "correct_answer": "b",
+            "why_correct": "A .gitignore file lists patterns for files and directories that Git should not track.",
+            "why_incorrect": {
+              "a": "Contributors are tracked via commits or repository metadata, not .gitignore.",
+              "c": "GitHub Actions workflows are defined in YAML files under .github/workflows.",
+              "d": "Git configuration settings are stored in config files, not .gitignore."
+            }
+          }
+        ]
+      },
+      {
+        "category": "Project Management & TDD",
+        "questions": [
+          {
+            "number": 4,
+            "question": "What is the correct sequence in Test-Driven Development?",
+            "choices": {
+              "a": "Write code, write tests, refactor",
+              "b": "Design tests, write code, test code",
+              "c": "Write tests, write code, refactor",
+              "d": "Design architecture, write tests, implement code"
+            },
+            "correct_answer": "c",
+            "why_correct": "TDD follows the Red-Green-Refactor cycle: write failing tests, write code to pass them, then refactor.",
+            "why_incorrect": {
+              "a": "This sequence writes code before tests, which is the opposite of TDD.",
+              "b": "This is a generic flow, not the strict TDD cycle; TDD emphasizes starting with failing tests.",
+              "d": "Architecture design is not explicitly part of the TDD red-green-refactor loop."
+            }
+          },
+          {
+            "number": 5,
+            "question": "Which statement about unit tests is true?",
+            "choices": {
+              "a": "They test the entire application as a whole",
+              "b": "They test individual components in isolation",
+              "c": "They only test the user interface",
+              "d": "They require a production database"
+            },
+            "correct_answer": "b",
+            "why_correct": "Unit tests are focused on testing small, isolated pieces of code, like individual functions or classes.",
+            "why_incorrect": {
+              "a": "Testing the entire application is closer to system or end-to-end testing, not unit testing.",
+              "c": "Unit tests can cover any layer of the system, not just the UI.",
+              "d": "Unit tests should avoid production databases and typically use mocks or test databases."
+            }
+          }
+        ]
+      },
+      {
+        "category": "SQL (Basics)",
+        "questions": [
+          {
+            "number": 6,
+            "question": "Which SQL statement selects all columns from a table named \"users\"?",
+            "choices": {
+              "a": "SELECT users",
+              "b": "SELECT ALL FROM users",
+              "c": "SELECT * FROM users",
+              "d": "SELECT COLUMNS FROM users"
+            },
+            "correct_answer": "c",
+            "why_correct": "SELECT * FROM users selects all columns from the users table.",
+            "why_incorrect": {
+              "a": "This omits the FROM keyword and is not valid SQL.",
+              "b": "SELECT ALL FROM users is not standard SQL syntax.",
+              "d": "SELECT COLUMNS FROM users is not valid SQL syntax."
+            }
+          },
+          {
+            "number": 7,
+            "question": "In SQL, which command adds a new record to a table?",
+            "choices": {
+              "a": "ADD",
+              "b": "INSERT",
+              "c": "APPEND",
+              "d": "CREATE"
+            },
+            "correct_answer": "b",
+            "why_correct": "INSERT is the SQL command used to add new rows to a table.",
+            "why_incorrect": {
+              "a": "ADD is not used to insert rows into tables in standard SQL.",
+              "c": "APPEND is not a standard SQL keyword.",
+              "d": "CREATE is used to create databases or tables, not new records."
+            }
+          }
+        ]
+      },
+      {
+        "category": "APIs & HTTP",
+        "questions": [
+          {
+            "number": 8,
+            "question": "What does REST stand for in RESTful API?",
+            "choices": {
+              "a": "Reactive State Transfer",
+              "b": "Representational State Transfer",
+              "c": "Resource Standard Transfer",
+              "d": "Remote Execution Service Technology"
+            },
+            "correct_answer": "b",
+            "why_correct": "REST stands for Representational State Transfer, an architectural style for designing networked applications.",
+            "why_incorrect": {
+              "a": "Reactive State Transfer is not the correct term.",
+              "c": "Resource Standard Transfer is not a standard phrase in this context.",
+              "d": "Remote Execution Service Technology is unrelated to the REST acronym."
+            }
+          },
+          {
+            "number": 9,
+            "question": "Which HTTP status code indicates a successful request?",
+            "choices": {
+              "a": "200",
+              "b": "404",
+              "c": "500",
+              "d": "302"
+            },
+            "correct_answer": "a",
+            "why_correct": "HTTP 200 OK indicates a successful HTTP request.",
+            "why_incorrect": {
+              "b": "404 indicates that the requested resource was not found.",
+              "c": "500 indicates an internal server error.",
+              "d": "302 indicates a temporary redirect, not direct success."
+            }
+          }
+        ]
+      },
+      {
+        "category": "JSON & Developer Tools",
+        "questions": [
+          {
+            "number": 10,
+            "question": "What is the correct syntax for JSON objects?",
+            "choices": {
+              "a": "{name: \"John\", age: 30}",
+              "b": "{\"name\": \"John\", \"age\": 30}",
+              "c": "{name = \"John\", age = 30}",
+              "d": "{\"name\" = \"John\", \"age\" = 30}"
+            },
+            "correct_answer": "b",
+            "why_correct": "JSON requires keys to be in double quotes and uses colons for key-value pairs.",
+            "why_incorrect": {
+              "a": "Keys must be in double quotes in valid JSON.",
+              "c": "JSON does not use '='; it uses ':' between keys and values.",
+              "d": "JSON uses ':' not '=' between keys and values."
+            }
+          },
+          {
+            "number": 11,
+            "question": "What is the primary purpose of a linter?",
+            "choices": {
+              "a": "To optimize code for performance",
+              "b": "To identify coding errors and style issues",
+              "c": "To compile code into executable files",
+              "d": "To manage project dependencies"
+            },
+            "correct_answer": "b",
+            "why_correct": "Linters analyze source code to detect errors, bugs, and style inconsistencies.",
+            "why_incorrect": {
+              "a": "Performance optimization is not the primary purpose of a linter.",
+              "c": "Compiling code is done by compilers or build tools, not linters.",
+              "d": "Dependency management is handled by package managers, not linters."
+            }
+          },
+          {
+            "number": 12,
+            "question": "What is the main purpose of a precommit hook?",
+            "choices": {
+              "a": "To automatically commit code changes",
+              "b": "To run tests or linters before allowing a commit",
+              "c": "To create a new branch for each commit",
+              "d": "To synchronize with remote repositories"
+            },
+            "correct_answer": "b",
+            "why_correct": "Pre-commit hooks allow checks like tests or linters to run before a commit is finalized.",
+            "why_incorrect": {
+              "a": "Pre-commit hooks do not automatically commit; they run before a manual commit.",
+              "c": "They do not create branches; branching is a separate Git operation.",
+              "d": "They do not sync with remote repositories; that is done with push/pull."
+            }
+          }
+        ]
+      },
+      {
+        "category": "HTML (W3Schools)",
+        "questions": [
+          {
+            "number": 13,
+            "question": "Which HTML tag is used to define an unordered list?",
+            "choices": {
+              "a": "<ol>",
+              "b": "<ul>",
+              "c": "<list>",
+              "d": "<dl>"
+            },
+            "correct_answer": "b",
+            "why_correct": "<ul> defines an unordered (bulleted) list in HTML.",
+            "why_incorrect": {
+              "a": "<ol> defines an ordered (numbered) list.",
+              "c": "<list> is not a standard HTML tag.",
+              "d": "<dl> defines a description list, not an unordered list."
+            }
+          },
+          {
+            "number": 14,
+            "question": "What does the HTML <meta> tag do?",
+            "choices": {
+              "a": "Displays metadata visible to users",
+              "b": "Provides metadata about the HTML document",
+              "c": "Creates animations for the webpage",
+              "d": "Links to external JavaScript files"
+            },
+            "correct_answer": "b",
+            "why_correct": "<meta> provides metadata (like charset, description, viewport) about the document.",
+            "why_incorrect": {
+              "a": "Metadata is not directly visible to users.",
+              "c": "<meta> does not create animations.",
+              "d": "External JavaScript is linked using <script>, not <meta>."
+            }
+          },
+          {
+            "number": 15,
+            "question": "Which HTML5 element represents a standalone section of content?",
+            "choices": {
+              "a": "<div>",
+              "b": "<span>",
+              "c": "<article>",
+              "d": "<content>"
+            },
+            "correct_answer": "c",
+            "why_correct": "<article> represents a self-contained, independent piece of content.",
+            "why_incorrect": {
+              "a": "<div> is a generic container with no semantic meaning.",
+              "b": "<span> is an inline container, not a standalone content section.",
+              "d": "<content> is not a standard HTML5 element."
+            }
+          },
+          {
+            "number": 16,
+            "question": "What is the purpose of the HTML <form> element?",
+            "choices": {
+              "a": "To create formatted text",
+              "b": "To collect user input",
+              "c": "To import external HTML files",
+              "d": "To define a footer section"
+            },
+            "correct_answer": "b",
+            "why_correct": "<form> is used to collect user input and submit it to a server.",
+            "why_incorrect": {
+              "a": "Formatted text is handled by various text tags, not specifically <form>.",
+              "c": "Importing external HTML is not done with <form>.",
+              "d": "<footer> defines a footer, not <form>."
+            }
+          },
+          {
+            "number": 17,
+            "question": "Which attribute is required for an HTML <img> tag?",
+            "choices": {
+              "a": "title",
+              "b": "src",
+              "c": "alt",
+              "d": "width"
+            },
+            "correct_answer": "b",
+            "why_correct": "The src attribute specifies the image source URL and is required.",
+            "why_incorrect": {
+              "a": "title is optional and provides advisory information.",
+              "c": "alt is strongly recommended for accessibility but not strictly required by the parser.",
+              "d": "width is optional for styling and layout."
+            }
+          },
+          {
+            "number": 18,
+            "question": "What does the HTML <!DOCTYPE> declaration do?",
+            "choices": {
+              "a": "Declares the document as an HTML file",
+              "b": "Links to an external document type",
+              "c": "Tells the browser what version of HTML the page is written in",
+              "d": "Creates a doctype variable"
+            },
+            "correct_answer": "c",
+            "why_correct": "<!DOCTYPE> tells the browser which HTML standard to use for rendering.",
+            "why_incorrect": {
+              "a": "It does more than just declare the document type; it signals standard mode.",
+              "b": "It does not link to an external document type.",
+              "d": "It does not create a variable; it's a declaration."
+            }
+          }
+        ]
+      },
+      {
+        "category": "CSS (W3Schools)",
+        "questions": [
+          {
+            "number": 19,
+            "question": "What does CSS stand for?",
+            "choices": {
+              "a": "Computer Style Sheets",
+              "b": "Creative Style System",
+              "c": "Cascading Style Sheets",
+              "d": "Colorful Style Sheets"
+            },
+            "correct_answer": "c",
+            "why_correct": "CSS stands for Cascading Style Sheets.",
+            "why_incorrect": {
+              "a": "Computer Style Sheets is incorrect.",
+              "b": "Creative Style System is not the correct expansion.",
+              "d": "Colorful Style Sheets is not the correct term."
+            }
+          },
+          {
+            "number": 20,
+            "question": "Which CSS property is used to change the text color?",
+            "choices": {
+              "a": "color",
+              "b": "text-color",
+              "c": "font-color",
+              "d": "text-style"
+            },
+            "correct_answer": "a",
+            "why_correct": "The color property controls the text color in CSS.",
+            "why_incorrect": {
+              "b": "text-color is not a valid CSS property.",
+              "c": "font-color is not a standard CSS property.",
+              "d": "text-style is not used for text color."
+            }
+          },
+          {
+            "number": 21,
+            "question": "How do you select all paragraph elements in CSS?",
+            "choices": {
+              "a": "#p",
+              "b": ".p",
+              "c": "p",
+              "d": "all(p)"
+            },
+            "correct_answer": "c",
+            "why_correct": "Using the element selector p targets all <p> elements.",
+            "why_incorrect": {
+              "a": "#p selects an element with id=\"p\".",
+              "b": ".p selects elements with class=\"p\".",
+              "d": "all(p) is not valid CSS selector syntax."
+            }
+          },
+          {
+            "number": 22,
+            "question": "What is the CSS Box Model?",
+            "choices": {
+              "a": "A design pattern for creating boxes",
+              "b": "A layout model describing content, padding, border, and margin",
+              "c": "A 3D rendering technique",
+              "d": "A framework for responsive design"
+            },
+            "correct_answer": "b",
+            "why_correct": "The box model describes how content, padding, border, and margin define the size and spacing of elements.",
+            "why_incorrect": {
+              "a": "It is more than just a design pattern; it is a core layout model.",
+              "c": "It is not a 3D rendering technique.",
+              "d": "It is not a framework but a fundamental concept in CSS."
+            }
+          },
+          {
+            "number": 23,
+            "question": "Which CSS property controls the spacing between elements?",
+            "choices": {
+              "a": "space",
+              "b": "margin",
+              "c": "padding",
+              "d": "gap"
+            },
+            "correct_answer": "b",
+            "why_correct": "margin controls the outer space around an element, thus spacing between elements.",
+            "why_incorrect": {
+              "a": "space is not a valid CSS property.",
+              "c": "padding controls the space between content and its border, not between elements.",
+              "d": "gap applies to spacing within flex/grid containers, not generic element spacing in all contexts."
+            }
+          },
+          {
+            "number": 24,
+            "question": "What is the purpose of CSS media queries?",
+            "choices": {
+              "a": "To query a database for styling information",
+              "b": "To apply different styles for different devices/screen sizes",
+              "c": "To import styles from external media",
+              "d": "To animate CSS properties"
+            },
+            "correct_answer": "b",
+            "why_correct": "Media queries allow CSS rules to be applied conditionally based on device/screen characteristics.",
+            "why_incorrect": {
+              "a": "CSS has no direct database querying feature.",
+              "c": "@import is used to import styles, not media queries themselves.",
+              "d": "Animations are handled by CSS animations and transitions, not media queries."
+            }
+          }
+        ]
+      },
+      {
+        "category": "JavaScript (W3Schools)",
+        "questions": [
+          {
+            "number": 25,
+            "question": "Which statement correctly declares a variable in modern JavaScript?",
+            "choices": {
+              "a": "variable x = 5;",
+              "b": "var x = 5;",
+              "c": "let x = 5;",
+              "d": "Both b and c are correct"
+            },
+            "correct_answer": "d",
+            "why_correct": "Both var and let can be used to declare variables in modern JavaScript.",
+            "why_incorrect": {
+              "a": "variable is not a valid keyword in JavaScript.",
+              "b": "Alone it is correct, but option d includes both valid forms.",
+              "c": "Alone it is correct, but option d includes both valid forms."
+            }
+          },
+          {
+            "number": 26,
+            "question": "What will the following code return? typeof[]",
+            "choices": {
+              "a": "\"array\"",
+              "b": "\"object\"",
+              "c": "\"list\"",
+              "d": "\"undefined\""
+            },
+            "correct_answer": "b",
+            "why_correct": "In JavaScript, typeof [] returns \"object\" because arrays are objects.",
+            "why_incorrect": {
+              "a": "typeof does not return \"array\" for arrays.",
+              "c": "\"list\" is not a typeof return value.",
+              "d": "An array is not undefined, so typeof does not return \"undefined\"."
+            }
+          },
+          {
+            "number": 27,
+            "question": "How do you add a new element to the end of an array in JavaScript?",
+            "choices": {
+              "a": "arr.push(element)",
+              "b": "arr.add(element)",
+              "c": "arr.append(element)",
+              "d": "arr.insert(element)"
+            },
+            "correct_answer": "a",
+            "why_correct": "The push method adds one or more elements to the end of an array.",
+            "why_incorrect": {
+              "b": "add is not a standard array method in JavaScript.",
+              "c": "append is not a method on JavaScript arrays.",
+              "d": "insert is not a standard JavaScript array method."
+            }
+          },
+          {
+            "number": 28,
+            "question": "What is a JavaScript Promise used for?",
+            "choices": {
+              "a": "Securing code from unauthorized access",
+              "b": "Handling asynchronous operations",
+              "c": "Creating guaranteed bug-free code",
+              "d": "Improving code performance"
+            },
+            "correct_answer": "b",
+            "why_correct": "Promises represent the eventual completion or failure of an asynchronous operation and its resulting value.",
+            "why_incorrect": {
+              "a": "Promises are not a security mechanism.",
+              "c": "No feature can guarantee bug-free code.",
+              "d": "Promises help structure async code but do not inherently optimize performance."
+            }
+          },
+          {
+            "number": 29,
+            "question": "What does the following JavaScript code do? JSON.parse()",
+            "choices": {
+              "a": "Converts an object to a JSON string",
+              "b": "Parses a JSON string into a JavaScript object",
+              "c": "Validates JSON syntax",
+              "d": "Creates a new JSON file"
+            },
+            "correct_answer": "b",
+            "why_correct": "JSON.parse takes a JSON-formatted string and converts it into a JavaScript value or object.",
+            "why_incorrect": {
+              "a": "Converting an object to a JSON string is done with JSON.stringify.",
+              "c": "It does parse, but its main purpose is conversion, not pure validation.",
+              "d": "It does not create files; it only parses strings in memory."
+            }
+          },
+          {
+            "number": 30,
+            "question": "What is the purpose of TypeScript?",
+            "choices": {
+              "a": "To replace JavaScript entirely",
+              "b": "To add static typing to JavaScript",
+              "c": "To improve JavaScript performance",
+              "d": "To simplify JavaScript syntax"
+            },
+            "correct_answer": "b",
+            "why_correct": "TypeScript is a superset of JavaScript that adds optional static typing and other features.",
+            "why_incorrect": {
+              "a": "TypeScript compiles down to JavaScript; it does not replace it at runtime.",
+              "c": "Performance improvements are indirect; its goal is type safety and tooling.",
+              "d": "It often adds complexity via types, not just simplification of syntax."
+            }
+          }
+        ]
+      },
+      {
+        "category": "SQL (W3Schools)",
+        "questions": [
+          {
+            "number": 31,
+            "question": "Which SQL command is used to retrieve data from a database?",
+            "choices": {
+              "a": "GET",
+              "b": "SELECT",
+              "c": "RETRIEVE",
+              "d": "FETCH"
+            },
+            "correct_answer": "b",
+            "why_correct": "SELECT is the standard SQL command for querying data from tables.",
+            "why_incorrect": {
+              "a": "GET is not a standard SQL command.",
+              "c": "RETRIEVE is not a SQL keyword.",
+              "d": "FETCH is used in some contexts with cursors but not as the main query keyword."
+            }
+          },
+          {
+            "number": 32,
+            "question": "What is a primary key in a database table?",
+            "choices": {
+              "a": "The first column in the table",
+              "b": "A unique identifier for each record",
+              "c": "The most important data in a table",
+              "d": "A reference to another table"
+            },
+            "correct_answer": "b",
+            "why_correct": "A primary key uniquely identifies each row in a table.",
+            "why_incorrect": {
+              "a": "It does not have to be the first column.",
+              "c": "Primary key is about uniqueness, not subjective importance.",
+              "d": "A reference to another table is usually a foreign key."
+            }
+          },
+          {
+            "number": 33,
+            "question": "Which SQL clause is used to filter records?",
+            "choices": {
+              "a": "FILTER",
+              "b": "WHERE",
+              "c": "HAVING",
+              "d": "CONDITION"
+            },
+            "correct_answer": "b",
+            "why_correct": "WHERE filters rows based on specified conditions.",
+            "why_incorrect": {
+              "a": "FILTER is not a standard SQL clause.",
+              "c": "HAVING filters groups after aggregation, not basic row filtering.",
+              "d": "CONDITION is not a SQL keyword for filtering."
+            }
+          },
+          {
+            "number": 34,
+            "question": "What is a JOIN used for in SQL?",
+            "choices": {
+              "a": "To combine rows from two or more tables",
+              "b": "To join multiple databases",
+              "c": "To combine columns in a single table",
+              "d": "To join SQL with other programming languages"
+            },
+            "correct_answer": "a",
+            "why_correct": "JOIN combines rows from two or more tables based on related columns.",
+            "why_incorrect": {
+              "b": "JOINs operate on tables, not on entire databases.",
+              "c": "Combining columns in a single table does not require a JOIN.",
+              "d": "JOIN has nothing to do with combining SQL with other languages."
+            }
+          }
+        ]
+      },
+      {
+        "category": "Hatch",
+        "questions": [
+          {
+            "number": 35,
+            "question": "What is Hatch primarily used for?",
+            "choices": {
+              "a": "Frontend build tool",
+              "b": "Python project management and packaging",
+              "c": "Database migration",
+              "d": "API testing"
+            },
+            "correct_answer": "b",
+            "why_correct": "Hatch is a tool focused on Python project management and packaging workflows.",
+            "why_incorrect": {
+              "a": "It is not primarily a frontend build tool.",
+              "c": "It is not a database migration tool.",
+              "d": "It is not focused on API testing."
+            }
+          },
+          {
+            "number": 36,
+            "question": "Which command initializes a new Hatch project?",
+            "choices": {
+              "a": "hatch new",
+              "b": "hatch init",
+              "c": "hatch create",
+              "d": "hatch start"
+            },
+            "correct_answer": "a",
+            "why_correct": "hatch new is used to create a new Hatch-based project.",
+            "why_incorrect": {
+              "b": "hatch init is not the standard command for starting a new project here.",
+              "c": "hatch create is not the documented initialization command.",
+              "d": "hatch start is not the correct subcommand for creating a project."
+            }
+          }
+        ]
+      },
+      {
+        "category": "FastAPI",
+        "questions": [
+          {
+            "number": 37,
+            "question": "What language is FastAPI built for?",
+            "choices": {
+              "a": "JavaScript",
+              "b": "Python",
+              "c": "Java",
+              "d": "Ruby"
+            },
+            "correct_answer": "b",
+            "why_correct": "FastAPI is a modern web framework for building APIs in Python.",
+            "why_incorrect": {
+              "a": "FastAPI is not a JavaScript framework.",
+              "c": "It is not built for Java.",
+              "d": "It is not built for Ruby."
+            }
+          },
+          {
+            "number": 38,
+            "question": "What is a key feature of FastAPI?",
+            "choices": {
+              "a": "Automatic API documentation",
+              "b": "Built-in database ORM",
+              "c": "Server-side rendering",
+              "d": "Microservices orchestration"
+            },
+            "correct_answer": "a",
+            "why_correct": "FastAPI automatically generates interactive API docs using OpenAPI and Swagger UI.",
+            "why_incorrect": {
+              "b": "FastAPI integrates with ORMs but does not include a built-in one.",
+              "c": "Server-side rendering is not its primary feature.",
+              "d": "It does not specifically handle microservices orchestration."
+            }
+          },
+          {
+            "number": 39,
+            "question": "How does FastAPI handle request validation?",
+            "choices": {
+              "a": "Manual validation in route handlers",
+              "b": "Through Pydantic models",
+              "c": "Using external validation libraries only",
+              "d": "It doesn't support validation"
+            },
+            "correct_answer": "b",
+            "why_correct": "FastAPI uses Pydantic models to define and validate request data.",
+            "why_incorrect": {
+              "a": "You can validate manually, but the framework’s main mechanism is Pydantic models.",
+              "c": "External libraries are not required; Pydantic is integrated.",
+              "d": "FastAPI has strong validation support through Pydantic."
+            }
+          },
+          {
+            "number": 40,
+            "question": "What is the purpose of dependency injection in FastAPI?",
+            "choices": {
+              "a": "To reduce code duplication",
+              "b": "To manage database connections",
+              "c": "To share objects across different parts of the app",
+              "d": "All of the above"
+            },
+            "correct_answer": "d",
+            "why_correct": "Dependency injection is used to share and manage resources like DB connections and reduce repeated setup code.",
+            "why_incorrect": {
+              "a": "This is true, but not the only purpose.",
+              "b": "This is also true, but incomplete alone.",
+              "c": "Sharing objects is part of it, but not the whole story."
+            }
+          }
+        ]
+      },
+      {
+        "category": "React",
+        "questions": [
+          {
+            "number": 41,
+            "question": "What is JSX in React?",
+            "choices": {
+              "a": "A database query language",
+              "b": "A JavaScript extension that allows HTML-like syntax in JavaScript",
+              "c": "A styling framework",
+              "d": "A testing library"
+            },
+            "correct_answer": "b",
+            "why_correct": "JSX lets you write HTML-like markup directly in JavaScript, which React transforms to element creation calls.",
+            "why_incorrect": {
+              "a": "JSX is not related to databases.",
+              "c": "It is not a styling framework.",
+              "d": "It is not a testing library."
+            }
+          },
+          {
+            "number": 42,
+            "question": "What is a React component?",
+            "choices": {
+              "a": "A CSS file",
+              "b": "A JavaScript function or class that returns UI elements",
+              "c": "A HTML template",
+              "d": "A bundler configuration"
+            },
+            "correct_answer": "b",
+            "why_correct": "React components are functions or classes that return elements describing UI.",
+            "why_incorrect": {
+              "a": "CSS files contain styles, not React components.",
+              "c": "Pure HTML templates are not React components.",
+              "d": "Bundler configs (like Webpack configs) are not React components."
+            }
+          },
+          {
+            "number": 43,
+            "question": "What hook is used to manage state in a functional component?",
+            "choices": {
+              "a": "useStatus",
+              "b": "useState",
+              "c": "useMemory",
+              "d": "useData"
+            },
+            "correct_answer": "b",
+            "why_correct": "useState is the primary React hook used to manage local state in functional components.",
+            "why_incorrect": {
+              "a": "useStatus is not a standard React hook.",
+              "c": "useMemory is not a React hook.",
+              "d": "useData is not a built-in React hook."
+            }
+          },
+          {
+            "number": 44,
+            "question": "What is the purpose of the useEffect hook?",
+            "choices": {
+              "a": "To create animations",
+              "b": "To perform side effects in functional components",
+              "c": "To modify component props",
+              "d": "To improve rendering performance"
+            },
+            "correct_answer": "b",
+            "why_correct": "useEffect runs side effects such as data fetching, subscriptions, and manual DOM mutations.",
+            "why_incorrect": {
+              "a": "Animations can be implemented inside useEffect, but that is not its core purpose.",
+              "c": "Props are read-only and should not be modified; useEffect does not change props directly.",
+              "d": "It may indirectly affect performance, but its purpose is managing side effects."
+            }
+          },
+          {
+            "number": 45,
+            "question": "How do you pass data from a parent to a child component in React?",
+            "choices": {
+              "a": "Using global variables",
+              "b": "Through props",
+              "c": "Using the context API only",
+              "d": "By modifying the DOM directly"
+            },
+            "correct_answer": "b",
+            "why_correct": "Props are the standard way to pass data from a parent component to a child.",
+            "why_incorrect": {
+              "a": "Global variables are not the React-recommended method and break encapsulation.",
+              "c": "Context is used for global/shared state, but simple parent-to-child transfer is done via props.",
+              "d": "Direct DOM manipulation bypasses React's data flow and is not how you pass data."
+            }
+          },
+          {
+            "number": 46,
+            "question": "What is React's Virtual DOM?",
+            "choices": {
+              "a": "A complete separate DOM used for testing",
+              "b": "A lightweight copy of the actual DOM for performance optimization",
+              "c": "A 3D rendering of DOM elements",
+              "d": "A DOM alternative that doesn't use HTML"
+            },
+            "correct_answer": "b",
+            "why_correct": "The Virtual DOM is an in-memory representation of the actual DOM that allows efficient diffing and updates.",
+            "why_incorrect": {
+              "a": "It is not a separate DOM used just for testing.",
+              "c": "It is not related to 3D rendering.",
+              "d": "It still results in manipulation of the real HTML DOM."
+            }
+          }
+        ]
+      },
+      {
+        "category": "ShadCN",
+        "questions": [
+          {
+            "number": 47,
+            "question": "What is ShadCN?",
+            "choices": {
+              "a": "A CSS framework",
+              "b": "A UI component library for React",
+              "c": "A collection of accessible and customizable UI components",
+              "d": "A JavaScript animation library"
+            },
+            "correct_answer": "c",
+            "why_correct": "ShadCN provides a collection of accessible, customizable UI components often used with React and Tailwind.",
+            "why_incorrect": {
+              "a": "It is more than just a CSS framework; it focuses on ready-to-use components.",
+              "b": "While used in React, the emphasis is on curated component implementations.",
+              "d": "It is not primarily an animation library."
+            }
+          },
+          {
+            "number": 48,
+            "question": "How are ShadCN components installed?",
+            "choices": {
+              "a": "Via npm install as standard packages",
+              "b": "Using a CLI that copies the component code into your project",
+              "c": "By importing from a CDN",
+              "d": "Through a React plugin system"
+            },
+            "correct_answer": "b",
+            "why_correct": "ShadCN uses a CLI to copy component source code directly into your project.",
+            "why_incorrect": {
+              "a": "They are not typically consumed as a single prebuilt npm package.",
+              "c": "Components are not generally used via simple CDN imports.",
+              "d": "It does not rely on a React plugin system to install components."
+            }
+          },
+          {
+            "number": 49,
+            "question": "What styling solution does ShadCN use?",
+            "choices": {
+              "a": "CSS Modules",
+              "b": "Styled Components",
+              "c": "Tailwind CSS",
+              "d": "Emotion"
+            },
+            "correct_answer": "c",
+            "why_correct": "ShadCN components are built using Tailwind CSS utility classes.",
+            "why_incorrect": {
+              "a": "CSS Modules are not the primary styling mechanism used.",
+              "b": "It does not primarily rely on Styled Components.",
+              "d": "Emotion is not the default styling solution for ShadCN."
+            }
+          }
+        ]
+      },
+      {
+        "category": "Next.js",
+        "questions": [
+          {
+            "number": 50,
+            "question": "What is Next.js?",
+            "choices": {
+              "a": "A state management library",
+              "b": "A React framework with server-side rendering capabilities",
+              "c": "A CSS preprocessor",
+              "d": "A JavaScript testing framework"
+            },
+            "correct_answer": "b",
+            "why_correct": "Next.js is a React framework that supports server-side rendering, static site generation, and more.",
+            "why_incorrect": {
+              "a": "Next.js is not primarily for state management.",
+              "c": "It is not a CSS preprocessor.",
+              "d": "It is not a testing framework."
+            }
+          },
+          {
+            "number": 51,
+            "question": "How do you create a new page in Next.js App Router?",
+            "choices": {
+              "a": "Creating a new HTML file",
+              "b": "Adding a route to the routes.config.js file",
+              "c": "Creating a page.js file in a directory under app/",
+              "d": "Using the createPage() function"
+            },
+            "correct_answer": "c",
+            "why_correct": "In the App Router, a route is defined by creating a page.js file inside a folder under app/.",
+            "why_incorrect": {
+              "a": "Next.js pages are not created as raw HTML files.",
+              "b": "There is no routes.config.js mechanism in the App Router.",
+              "d": "There is no built-in createPage() function for defining pages."
+            }
+          },
+          {
+            "number": 52,
+            "question": "What is the purpose of the getServerSideProps function in Next.js?",
+            "choices": {
+              "a": "To handle client-side data fetching",
+              "b": "To fetch data at request time on the server",
+              "c": "To define server-side routes",
+              "d": "To configure server settings"
+            },
+            "correct_answer": "b",
+            "why_correct": "getServerSideProps runs on each request, allowing server-side data fetching before rendering.",
+            "why_incorrect": {
+              "a": "Client-side data fetching is done with hooks like useEffect or libraries like SWR.",
+              "c": "Routes are defined by file structure, not getServerSideProps.",
+              "d": "Server configuration is not handled by this function."
+            }
+          },
+          {
+            "number": 53,
+            "question": "What is the key difference between pages/ and app/ directories in Next.js 13+?",
+            "choices": {
+              "a": "pages/ is deprecated",
+              "b": "app/ uses the new App Router with RSC support",
+              "c": "pages/ supports API routes while app/ doesn't",
+              "d": "There is no difference"
+            },
+            "correct_answer": "b",
+            "why_correct": "The app/ directory uses the new App Router and supports React Server Components (RSC).",
+            "why_incorrect": {
+              "a": "pages/ is still supported as of Next.js 13+, just not the new router.",
+              "c": "Both can handle API routes (pages/api/), and app/ can use route handlers; the main distinction is routing and RSC.",
+              "d": "There is a significant architectural difference between pages/ and app/."
+            }
+          }
+        ]
+      },
+      {
+        "category": "Docker",
+        "questions": [
+          {
+            "number": 54,
+            "question": "What is Docker?",
+            "choices": {
+              "a": "A programming language",
+              "b": "A containerization platform",
+              "c": "A database management system",
+              "d": "A cloud hosting service"
+            },
+            "correct_answer": "b",
+            "why_correct": "Docker is a containerization platform that packages applications and dependencies into containers.",
+            "why_incorrect": {
+              "a": "Docker is not a programming language.",
+              "c": "It is not a database management system.",
+              "d": "It is not itself a cloud hosting provider, although it can be used in cloud environments."
+            }
+          },
+          {
+            "number": 55,
+            "question": "What is a Docker container?",
+            "choices": {
+              "a": "A physical storage device",
+              "b": "A lightweight, standalone executable package",
+              "c": "A virtual machine",
+              "d": "A build tool"
+            },
+            "correct_answer": "b",
+            "why_correct": "A Docker container is a lightweight, standalone executable package that includes everything needed to run a piece of software.",
+            "why_incorrect": {
+              "a": "Containers are software constructs, not physical devices.",
+              "c": "Containers are more lightweight than virtual machines and share the host OS kernel.",
+              "d": "A container is not itself a build tool."
+            }
+          },
+          {
+            "number": 56,
+            "question": "What file defines how to build a Docker image?",
+            "choices": {
+              "a": "docker.json",
+              "b": "container.yaml",
+              "c": "Dockerfile",
+              "d": "docker-config.js"
+            },
+            "correct_answer": "c",
+            "why_correct": "A Dockerfile contains instructions on how to build a Docker image.",
+            "why_incorrect": {
+              "a": "docker.json is not the standard build definition file.",
+              "b": "container.yaml is not used by Docker for image definitions.",
+              "d": "docker-config.js is not the standard way to define Docker images."
+            }
+          },
+          {
+            "number": 57,
+            "question": "What command runs a Docker container?",
+            "choices": {
+              "a": "docker start",
+              "b": "docker execute",
+              "c": "docker run",
+              "d": "docker container"
+            },
+            "correct_answer": "c",
+            "why_correct": "docker run creates and starts a container from an image.",
+            "why_incorrect": {
+              "a": "docker start starts an existing, stopped container but does not create a new one.",
+              "b": "docker execute is not a standard Docker command.",
+              "d": "docker container is a management namespace, not the command to run containers on its own."
+            }
+          }
+        ]
+      },
+      {
+        "category": "GitHub Actions",
+        "questions": [
+          {
+            "number": 58,
+            "question": "What are GitHub Actions used for?",
+            "choices": {
+              "a": "Code debugging",
+              "b": "Automating workflows like CI/CD",
+              "c": "Managing GitHub repositories",
+              "d": "Creating GitHub documentation"
+            },
+            "correct_answer": "b",
+            "why_correct": "GitHub Actions enable automation of workflows such as CI/CD, testing, and deployment.",
+            "why_incorrect": {
+              "a": "While workflows may run tests, Actions are not primarily a debugging tool.",
+              "c": "Repository management is done via the GitHub UI or API, not primarily Actions.",
+              "d": "Documentation creation is not the core feature, although Actions can be used to help automate docs builds."
+            }
+          },
+          {
+            "number": 59,
+            "question": "Where are GitHub Actions workflow files stored in a repository?",
+            "choices": {
+              "a": "In the root directory",
+              "b": "In the .github/workflows directory",
+              "c": "In the .actions directory",
+              "d": "In the .workflows directory"
+            },
+            "correct_answer": "b",
+            "why_correct": "Workflow YAML files for GitHub Actions must be placed in .github/workflows.",
+            "why_incorrect": {
+              "a": "Workflow files are not read from the repository root by default.",
+              "c": ".actions is not the correct directory name.",
+              "d": ".workflows is not the correct directory name."
+            }
+          },
+          {
+            "number": 60,
+            "question": "What triggers a GitHub Actions workflow?",
+            "choices": {
+              "a": "Only manual execution",
+              "b": "Only code commits",
+              "c": "Events like pushes, pull requests, or scheduled times",
+              "d": "Only when issues are created"
+            },
+            "correct_answer": "c",
+            "why_correct": "Workflows can be triggered by various events: pushes, pull requests, schedules, and more.",
+            "why_incorrect": {
+              "a": "Manual runs are possible, but workflows are not limited to manual triggers.",
+              "b": "They are not restricted to just commits; many events can trigger them.",
+              "d": "Issue creation is just one type of event and not the only trigger type."
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "quiz2": {
+    "categories": [
+      {
+        "category": "Git & GitHub",
+        "questions": [
+          {
+            "number": 61,
+            "question": "What Git command shows the commit history?",
+            "choices": {
+              "a": "git history",
+              "b": "git log",
+              "c": "git show --all",
+              "d": "git commits"
+            },
+            "correct_answer": "b",
+            "why_correct": "git log displays the commit history for the repository.",
+            "why_incorrect": {
+              "a": "git history is not a standard Git command.",
+              "c": "git show --all shows detailed information but is not the standard history log command.",
+              "d": "git commits is not a valid Git command."
+            }
+          },
+          {
+            "number": 62,
+            "question": "Which command stages changes for a specific file?",
+            "choices": {
+              "a": "git add [filename]",
+              "b": "git stage [filename]",
+              "c": "git commit [filename]",
+              "d": "git update [filename]"
+            },
+            "correct_answer": "a",
+            "why_correct": "git add [filename] adds the specified file to the staging area.",
+            "why_incorrect": {
+              "b": "git stage is not a standard Git command.",
+              "c": "git commit records changes already in the staging area; it does not stage files.",
+              "d": "git update is not used for staging files in Git."
+            }
+          },
+          {
+            "number": 63,
+            "question": "What is a Git branch?",
+            "choices": {
+              "a": "A separate version of the code that diverges from the main line",
+              "b": "A collection of related repositories",
+              "c": "A type of remote repository",
+              "d": "A project management feature in GitHub"
+            },
+            "correct_answer": "a",
+            "why_correct": "A Git branch is a separate line of development that diverges from the main code history.",
+            "why_incorrect": {
+              "b": "A collection of repositories is not called a branch.",
+              "c": "Branches exist within repositories, not as types of remote repositories.",
+              "d": "Branches are a Git feature, not a project management feature specific to GitHub."
+            }
+          }
+        ]
+      },
+      {
+        "category": "Project Management & TDD",
+        "questions": [
+          {
+            "number": 64,
+            "question": "What does TDD stand for?",
+            "choices": {
+              "a": "Technical Design Document",
+              "b": "Test-Driven Development",
+              "c": "Technical Debt Demolition",
+              "d": "Testing and Documentation Development"
+            },
+            "correct_answer": "b",
+            "why_correct": "TDD stands for Test-Driven Development, a process of writing tests before code.",
+            "why_incorrect": {
+              "a": "Technical Design Document is unrelated to testing-first development.",
+              "c": "Technical Debt Demolition is not a standard term for TDD.",
+              "d": "Testing and Documentation Development is not the correct expansion of TDD."
+            }
+          },
+          {
+            "number": 65,
+            "question": "In project management, what is a sprint?",
+            "choices": {
+              "a": "A quick meeting to resolve blockers",
+              "b": "A time-boxed period during which specific work is completed",
+              "c": "A rapid coding session",
+              "d": "A method for prioritizing tasks"
+            },
+            "correct_answer": "b",
+            "why_correct": "A sprint is a fixed-length, time-boxed period where a team works to complete a set of items.",
+            "why_incorrect": {
+              "a": "A quick meeting to resolve blockers is more like a stand-up.",
+              "c": "A sprint is not just about coding quickly; it is a structured time-box.",
+              "d": "Prioritization methods include backlog grooming and other techniques, not the sprint itself."
+            }
+          }
+        ]
+      },
+      {
+        "category": "SQL (Basics)",
+        "questions": [
+          {
+            "number": 66,
+            "question": "Which SQL clause is used to sort results?",
+            "choices": {
+              "a": "SORT BY",
+              "b": "ORDER BY",
+              "c": "ARRANGE BY",
+              "d": "GROUP BY"
+            },
+            "correct_answer": "b",
+            "why_correct": "ORDER BY sorts the result set by one or more columns.",
+            "why_incorrect": {
+              "a": "SORT BY is not valid SQL syntax.",
+              "c": "ARRANGE BY is not a SQL clause.",
+              "d": "GROUP BY groups rows based on column values; it does not sort them."
+            }
+          },
+          {
+            "number": 67,
+            "question": "What is the purpose of the SQL UPDATE statement?",
+            "choices": {
+              "a": "To create new tables",
+              "b": "To add new records",
+              "c": "To modify existing records",
+              "d": "To delete records"
+            },
+            "correct_answer": "c",
+            "why_correct": "UPDATE modifies existing records in a table that match a condition.",
+            "why_incorrect": {
+              "a": "CREATE TABLE is used to create new tables.",
+              "b": "INSERT is used to add new records.",
+              "d": "DELETE is used to remove records."
+            }
+          }
+        ]
+      },
+      {
+        "category": "APIs & HTTP",
+        "questions": [
+          {
+            "number": 68,
+            "question": "What is the primary purpose of an API?",
+            "choices": {
+              "a": "To create user interfaces",
+              "b": "To define how software components interact",
+              "c": "To style web pages",
+              "d": "To secure web applications"
+            },
+            "correct_answer": "b",
+            "why_correct": "An API defines a contract or interface for how different software components communicate.",
+            "why_incorrect": {
+              "a": "User interfaces are created with UI frameworks, not APIs.",
+              "c": "Styling web pages is the job of CSS, not APIs.",
+              "d": "APIs can be secured, but security is not their primary purpose."
+            }
+          },
+          {
+            "number": 69,
+            "question": "Which HTTP method is idempotent, meaning multiple identical requests have the same effect as a single request?",
+            "choices": {
+              "a": "POST",
+              "b": "GET",
+              "c": "PATCH",
+              "d": "DELETE"
+            },
+            "correct_answer": "b",
+            "why_correct": "GET is idempotent because multiple GETs do not modify server state.",
+            "why_incorrect": {
+              "a": "POST is not idempotent because repeated POSTs can create multiple resources or side effects.",
+              "c": "PATCH may change state incrementally and is not guaranteed idempotent.",
+              "d": "DELETE is defined as idempotent in HTTP, but in many systems repeated DELETEs may differ in responses; the quiz specifically selects GET."
+            }
+          }
+        ]
+      },
+      {
+        "category": "JSON & Developer Tools",
+        "questions": [
+          {
+            "number": 70,
+            "question": "Which of the following is NOT a valid JSON data type?",
+            "choices": {
+              "a": "string",
+              "b": "number",
+              "c": "function",
+              "d": "null"
+            },
+            "correct_answer": "c",
+            "why_correct": "JSON does not support functions as a data type; it supports string, number, object, array, boolean, and null.",
+            "why_incorrect": {
+              "a": "string is a core JSON type.",
+              "b": "number is a valid JSON type.",
+              "d": "null is explicitly supported in JSON."
+            }
+          },
+          {
+            "number": 71,
+            "question": "What does the Fast API framework primarily help with?",
+            "choices": {
+              "a": "Frontend development",
+              "b": "Building high-performance APIs",
+              "c": "Database management",
+              "d": "Network security"
+            },
+            "correct_answer": "b",
+            "why_correct": "FastAPI is a Python framework designed for building fast, high-performance APIs.",
+            "why_incorrect": {
+              "a": "FastAPI is backend-focused, not a frontend framework.",
+              "c": "It can integrate with databases but is not primarily a DB management tool.",
+              "d": "Network security is outside its main scope; it can be part of a secure system but not its primary goal."
+            }
+          },
+          {
+            "number": 72,
+            "question": "What is the purpose of a code formatter?",
+            "choices": {
+              "a": "To identify security vulnerabilities",
+              "b": "To apply consistent formatting to code",
+              "c": "To optimize code performance",
+              "d": "To generate documentation"
+            },
+            "correct_answer": "b",
+            "why_correct": "Code formatters ensure code follows a consistent style automatically.",
+            "why_incorrect": {
+              "a": "Security vulnerabilities are identified by security scanners, not formatters.",
+              "c": "Formatters may not change performance; they change code layout and style.",
+              "d": "Documentation is generated by separate tools, not formatters."
+            }
+          }
+        ]
+      },
+      {
+        "category": "HTML (W3Schools)",
+        "questions": [
+          {
+            "number": 73,
+            "question": "Which HTML element is used to create a hyperlink?",
+            "choices": {
+              "a": "<link>",
+              "b": "<a>",
+              "c": "<href>",
+              "d": "<hyperlink>"
+            },
+            "correct_answer": "b",
+            "why_correct": "<a> is the anchor element used to create hyperlinks.",
+            "why_incorrect": {
+              "a": "<link> is used mainly for linking external resources like stylesheets.",
+              "c": "<href> is an attribute, not a tag.",
+              "d": "<hyperlink> is not a valid HTML tag."
+            }
+          },
+          {
+            "number": 74,
+            "question": "What does the HTML <canvas> element allow you to do?",
+            "choices": {
+              "a": "Create responsive layouts",
+              "b": "Draw graphics via JavaScript",
+              "c": "Display video content",
+              "d": "Style form elements"
+            },
+            "correct_answer": "b",
+            "why_correct": "<canvas> provides a drawing surface for graphics rendered using JavaScript.",
+            "why_incorrect": {
+              "a": "Responsive layouts are handled by CSS and layout tags, not <canvas>.",
+              "c": "Video content is typically handled with the <video> tag.",
+              "d": "Styling form elements is done via CSS, not <canvas>."
+            }
+          },
+          {
+            "number": 75,
+            "question": "Which HTML tag is used to define a table row?",
+            "choices": {
+              "a": "<tr>",
+              "b": "<row>",
+              "c": "<td>",
+              "d": "<th>"
+            },
+            "correct_answer": "a",
+            "why_correct": "<tr> defines a table row in HTML.",
+            "why_incorrect": {
+              "b": "<row> is not a valid HTML tag.",
+              "c": "<td> defines a table cell, not a row.",
+              "d": "<th> defines a header cell within a row."
+            }
+          },
+          {
+            "number": 76,
+            "question": "What is the purpose of the HTML <header> element?",
+            "choices": {
+              "a": "To create a heading",
+              "b": "To define a header for a document or section",
+              "c": "To create a container only for links",
+              "d": "To style the top of a webpage"
+            },
+            "correct_answer": "b",
+            "why_correct": "<header> represents introductory content or a set of navigational links for a document or section.",
+            "why_incorrect": {
+              "a": "Headings are created with <h1>–<h6> tags.",
+              "c": "It can contain many elements, not just links.",
+              "d": "Styling is done via CSS, not by using <header> alone."
+            }
+          },
+          {
+            "number": 77,
+            "question": "How do you create a checkbox in HTML?",
+            "choices": {
+              "a": "<input type=\"check\">",
+              "b": "<input type=\"checkbox\">",
+              "c": "<checkbox>",
+              "d": "<input type=\"option\">"
+            },
+            "correct_answer": "b",
+            "why_correct": "<input type=\"checkbox\"> creates a checkbox form control.",
+            "why_incorrect": {
+              "a": "type=\"check\" is not a valid input type.",
+              "c": "<checkbox> is not a standard HTML tag.",
+              "d": "type=\"option\" is not valid for <input>."
+            }
+          },
+          {
+            "number": 78,
+            "question": "What is the purpose of the HTML <script> element?",
+            "choices": {
+              "a": "To define client-side scripts",
+              "b": "To specify a scripted animation",
+              "c": "To create a script-based layout",
+              "d": "To import external HTML files"
+            },
+            "correct_answer": "a",
+            "why_correct": "<script> is used to embed or reference client-side JavaScript.",
+            "why_incorrect": {
+              "b": "Animations are possible with scripts, but the element's purpose is broader.",
+              "c": "Layouts are handled by HTML structure and CSS, not <script> alone.",
+              "d": "External HTML is usually included with server-side includes or frameworks, not <script>."
+            }
+          }
+        ]
+      },
+      {
+        "category": "CSS (W3Schools)",
+        "questions": [
+          {
+            "number": 79,
+            "question": "Which CSS property controls the space inside an element?",
+            "choices": {
+              "a": "margin",
+              "b": "padding",
+              "c": "border",
+              "d": "spacing"
+            },
+            "correct_answer": "b",
+            "why_correct": "padding controls the space between the content and the element's border.",
+            "why_incorrect": {
+              "a": "margin controls the space outside the element, not inside.",
+              "c": "border defines the line around the element, not internal spacing.",
+              "d": "spacing is not a standard CSS property."
+            }
+          },
+          {
+            "number": 80,
+            "question": "How do you select an element with the class \"header\" in CSS?",
+            "choices": {
+              "a": "#header",
+              "b": ".header",
+              "c": "@header",
+              "d": "header"
+            },
+            "correct_answer": "b",
+            "why_correct": ".header selects all elements with class=\"header\".",
+            "why_incorrect": {
+              "a": "#header selects an element with id=\"header\".",
+              "c": "@header is not valid selector syntax.",
+              "d": "header selects <header> elements, not elements with a specific class."
+            }
+          },
+          {
+            "number": 81,
+            "question": "What is the purpose of CSS Flexbox?",
+            "choices": {
+              "a": "To create flexible responsive layouts",
+              "b": "To animate HTML elements",
+              "c": "To handle form submissions",
+              "d": "To connect to databases"
+            },
+            "correct_answer": "a",
+            "why_correct": "Flexbox provides a one-dimensional layout system for flexible and responsive UI design.",
+            "why_incorrect": {
+              "b": "Animations are managed via transitions and animation properties, not Flexbox itself.",
+              "c": "Form submissions are handled by HTML and JavaScript, not Flexbox.",
+              "d": "CSS cannot connect to databases."
+            }
+          },
+          {
+            "number": 82,
+            "question": "Which CSS property changes the font of an element?",
+            "choices": {
+              "a": "font-type",
+              "b": "font-style",
+              "c": "font-family",
+              "d": "text-font"
+            },
+            "correct_answer": "c",
+            "why_correct": "font-family specifies the font face used for text.",
+            "why_incorrect": {
+              "a": "font-type is not a valid CSS property.",
+              "b": "font-style controls italics/oblique, not the font family itself.",
+              "d": "text-font is not a standard CSS property."
+            }
+          },
+          {
+            "number": 83,
+            "question": "How do you make text bold using CSS?",
+            "choices": {
+              "a": "font-weight: bold;",
+              "b": "text-style: bold;",
+              "c": "font: bold;",
+              "d": "text-weight: bold;"
+            },
+            "correct_answer": "a",
+            "why_correct": "font-weight: bold; is the standard way to make text bold.",
+            "why_incorrect": {
+              "b": "text-style is not a valid CSS property.",
+              "c": "font: bold; is incomplete shorthand and not recommended for just weight.",
+              "d": "text-weight is not a valid CSS property."
+            }
+          },
+          {
+            "number": 84,
+            "question": "What does the CSS property \"z-index\" control?",
+            "choices": {
+              "a": "The transparency of an element",
+              "b": "The width of an element on the z-axis",
+              "c": "The stacking order of elements",
+              "d": "The zoom level of an element"
+            },
+            "correct_answer": "c",
+            "why_correct": "z-index controls the stacking order of positioned elements along the z-axis.",
+            "why_incorrect": {
+              "a": "Transparency is controlled by opacity.",
+              "b": "Elements do not have a 'width' on the z-axis; z-index is about order, not size.",
+              "d": "Zoom level is controlled by browser or transform, not z-index."
+            }
+          }
+        ]
+      },
+      {
+        "category": "JavaScript (W3Schools)",
+        "questions": [
+          {
+            "number": 85,
+            "question": "What is the correct way to write a JavaScript array?",
+            "choices": {
+              "a": "var colors = \"red\", \"green\", \"blue\"",
+              "b": "var colors = (1:\"red\", 2:\"green\", 3:\"blue\")",
+              "c": "var colors = [\"red\", \"green\", \"blue\"]",
+              "d": "var colors = {red, green, blue}"
+            },
+            "correct_answer": "c",
+            "why_correct": "Arrays in JavaScript are defined with square brackets around comma-separated values.",
+            "why_incorrect": {
+              "a": "This syntax defines multiple variables or is invalid; not an array.",
+              "b": "This resembles an object with invalid syntax, not an array.",
+              "d": "Curly braces define objects, not arrays, and the syntax is incomplete."
+            }
+          },
+          {
+            "number": 86,
+            "question": "How do you write a conditional statement in JavaScript?",
+            "choices": {
+              "a": "if i = 5 then",
+              "b": "if i == 5 then",
+              "c": "if (i == 5)",
+              "d": "if i = 5"
+            },
+            "correct_answer": "c",
+            "why_correct": "JavaScript if statements use parentheses around the condition and do not include 'then'.",
+            "why_incorrect": {
+              "a": "Uses assignment and 'then' keyword, which are incorrect in JavaScript.",
+              "b": "Lacks parentheses and incorrectly uses 'then'.",
+              "d": "Uses assignment operator instead of comparison and lacks parentheses."
+            }
+          },
+          {
+            "number": 87,
+            "question": "What is the correct way to write a JavaScript function?",
+            "choices": {
+              "a": "function = myFunction()",
+              "b": "function myFunction()",
+              "c": "function\n()",
+              "d": "def myFunction()"
+            },
+            "correct_answer": "b",
+            "why_correct": "function myFunction() is valid function declaration syntax in JavaScript.",
+            "why_incorrect": {
+              "a": "Assigning to function is not valid syntax.",
+              "c": "The name is missing; this is not a complete declaration.",
+              "d": "def is used in Python, not in JavaScript."
+            }
+          },
+          {
+            "number": 88,
+            "question": "What will the following code return? \"5\" + 2",
+            "choices": {
+              "a": "7",
+              "b": "\"52\"",
+              "c": "52",
+              "d": "Error"
+            },
+            "correct_answer": "b",
+            "why_correct": "The + operator with a string performs concatenation, producing the string \"52\".",
+            "why_incorrect": {
+              "a": "JavaScript does not convert \"5\" to a number in this case; it concatenates.",
+              "c": "This would be the result of numeric addition, not string concatenation.",
+              "d": "This operation is valid and does not throw an error."
+            }
+          },
+          {
+            "number": 89,
+            "question": "What does the map() method do in JavaScript?",
+            "choices": {
+              "a": "Creates a new array by performing a function on each array element",
+              "b": "Modifies each element in the original array",
+              "c": "Filters out array elements",
+              "d": "Combines multiple arrays"
+            },
+            "correct_answer": "a",
+            "why_correct": "map() returns a new array with the results of applying a function to each element.",
+            "why_incorrect": {
+              "b": "map() does not modify the original array; it returns a new one.",
+              "c": "filter() is used to filter elements, not map().",
+              "d": "concat() or spread syntax are used to combine arrays."
+            }
+          },
+          {
+            "number": 90,
+            "question": "What is a TypeScript interface?",
+            "choices": {
+              "a": "A visual component for user interaction",
+              "b": "A structure that defines the shape of an object",
+              "c": "A connection between different programming languages",
+              "d": "A method to interface with external APIs"
+            },
+            "correct_answer": "b",
+            "why_correct": "A TypeScript interface defines the properties and types that an object should have.",
+            "why_incorrect": {
+              "a": "Interfaces are type constructs, not UI components.",
+              "c": "They don't connect programming languages; they describe types.",
+              "d": "APIs may use interfaces conceptually, but TS interfaces are not for external API connections."
+            }
+          }
+        ]
+      },
+      {
+        "category": "SQL (W3Schools)",
+        "questions": [
+          {
+            "number": 91,
+            "question": "Which SQL statement is used to delete data from a database?",
+            "choices": {
+              "a": "REMOVE",
+              "b": "DELETE",
+              "c": "CLEAR",
+              "d": "DROP"
+            },
+            "correct_answer": "b",
+            "why_correct": "DELETE removes rows that match a specified condition from a table.",
+            "why_incorrect": {
+              "a": "REMOVE is not a standard SQL command.",
+              "c": "CLEAR is not a standard SQL command.",
+              "d": "DROP removes entire tables or databases, not just data rows by condition."
+            }
+          },
+          {
+            "number": 92,
+            "question": "What is a foreign key?",
+            "choices": {
+              "a": "A key that must be unique for each record",
+              "b": "A field that connects to a primary key in another table",
+              "c": "A security feature for database access",
+              "d": "An encryption key for sensitive data"
+            },
+            "correct_answer": "b",
+            "why_correct": "A foreign key references a primary key in another table to establish relationships.",
+            "why_incorrect": {
+              "a": "A unique key or primary key must be unique, but foreign keys need not be unique.",
+              "c": "Foreign keys enforce referential integrity, not access security.",
+              "d": "Encryption keys are unrelated to database relational design."
+            }
+          },
+          {
+            "number": 93,
+            "question": "How do you select distinct values in SQL?",
+            "choices": {
+              "a": "SELECT UNIQUE",
+              "b": "SELECT DIFFERENT",
+              "c": "SELECT DISTINCT",
+              "d": "SELECT SEPARATE"
+            },
+            "correct_answer": "c",
+            "why_correct": "SELECT DISTINCT removes duplicate rows from the result set based on selected columns.",
+            "why_incorrect": {
+              "a": "SELECT UNIQUE is not standard SQL syntax.",
+              "b": "SELECT DIFFERENT is not a valid SQL command.",
+              "d": "SELECT SEPARATE is not SQL syntax."
+            }
+          },
+          {
+            "number": 94,
+            "question": "What does SQL INNER JOIN return?",
+            "choices": {
+              "a": "Records that have matching values in both tables",
+              "b": "All records from the left table and matching records from the right table",
+              "c": "All records from both tables",
+              "d": "Records from the first table only"
+            },
+            "correct_answer": "a",
+            "why_correct": "INNER JOIN returns rows where the join condition matches in both tables.",
+            "why_incorrect": {
+              "b": "That describes a LEFT JOIN.",
+              "c": "That describes a FULL OUTER JOIN.",
+              "d": "INNER JOIN always considers both tables and the join condition."
+            }
+          }
+        ]
+      },
+      {
+        "category": "Hatch",
+        "questions": [
+          {
+            "number": 95,
+            "question": "What functionality does Hatch provide that's not in standard Python package tools?",
+            "choices": {
+              "a": "Version control",
+              "b": "Environment management",
+              "c": "Dependency tracking",
+              "d": "Integrated testing environment"
+            },
+            "correct_answer": "b",
+            "why_correct": "Hatch includes environment management, letting you create and manage project environments.",
+            "why_incorrect": {
+              "a": "Version control is handled by tools like Git.",
+              "c": "Dependency tracking is common in many package tools, not unique to Hatch.",
+              "d": "Testing integration is not its defining extra feature compared to standard tools."
+            }
+          },
+          {
+            "number": 96,
+            "question": "How does Hatch help with Python version management?",
+            "choices": {
+              "a": "It doesn't manage Python versions",
+              "b": "It installs Python versions automatically",
+              "c": "It creates isolated environments with specific Python versions",
+              "d": "It modifies the system Python installation"
+            },
+            "correct_answer": "c",
+            "why_correct": "Hatch can create isolated environments configured to use specific Python versions.",
+            "why_incorrect": {
+              "a": "Hatch does provide features to work with different Python versions via environments.",
+              "b": "It focuses on environments rather than directly installing global interpreters.",
+              "d": "It does not modify the system Python installation."
+            }
+          }
+        ]
+      },
+      {
+        "category": "FastAPI",
+        "questions": [
+          {
+            "number": 97,
+            "question": "What is a key advantage of FastAPI over other Python web frameworks?",
+            "choices": {
+              "a": "It's the only framework that works with Python",
+              "b": "It has superior performance and automatic validation",
+              "c": "It's the only framework that supports REST",
+              "d": "It has built-in database functionality"
+            },
+            "correct_answer": "b",
+            "why_correct": "FastAPI is known for high performance and automatic validation using type hints and Pydantic.",
+            "why_incorrect": {
+              "a": "Many web frameworks work with Python.",
+              "c": "REST can be implemented in many frameworks, not just FastAPI.",
+              "d": "FastAPI integrates with ORMs but does not include a built-in database engine."
+            }
+          },
+          {
+            "number": 98,
+            "question": "How does FastAPI generate API documentation?",
+            "choices": {
+              "a": "Manually through configuration files",
+              "b": "It doesn't generate documentation",
+              "c": "Automatically based on Python type hints",
+              "d": "Through external documentation tools only"
+            },
+            "correct_answer": "c",
+            "why_correct": "FastAPI uses type hints and Pydantic models to automatically generate OpenAPI docs and UIs.",
+            "why_incorrect": {
+              "a": "No manual configuration files are required for basic documentation.",
+              "b": "It does generate documentation automatically.",
+              "d": "External tools are not required for its core automatic docs."
+            }
+          },
+          {
+            "number": 99,
+            "question": "What is a Path Parameter in FastAPI?",
+            "choices": {
+              "a": "A configuration for folder paths",
+              "b": "A variable part of the URL path",
+              "c": "A parameter passed in the request body",
+              "d": "A query parameter in the URL"
+            },
+            "correct_answer": "b",
+            "why_correct": "A path parameter is a variable placeholder embedded in the URL path.",
+            "why_incorrect": {
+              "a": "It is not for filesystem configuration.",
+              "c": "Request bodies are not called path parameters.",
+              "d": "Query parameters appear after ?, not in the path segment."
+            }
+          },
+          {
+            "number": 100,
+            "question": "What is the purpose of a FastAPI dependency?",
+            "choices": {
+              "a": "To install additional packages",
+              "b": "To share logic between different parts of your application",
+              "c": "To connect to external services only",
+              "d": "To handle version dependencies"
+            },
+            "correct_answer": "b",
+            "why_correct": "Dependencies allow reusing shared logic like authentication, database sessions, or common checks.",
+            "why_incorrect": {
+              "a": "Package installation is done via tools like pip, not dependencies.",
+              "c": "They can connect to external services but are not limited to that.",
+              "d": "Version management is outside the scope of FastAPI dependencies."
+            }
+          }
+        ]
+      },
+      {
+        "category": "React",
+        "questions": [
+          {
+            "number": 101,
+            "question": "What is the main building block of a React application?",
+            "choices": {
+              "a": "Modules",
+              "b": "Components",
+              "c": "Functions",
+              "d": "Classes"
+            },
+            "correct_answer": "b",
+            "why_correct": "React applications are built from components that describe pieces of UI.",
+            "why_incorrect": {
+              "a": "Modules organize code but are not the conceptual building blocks in React.",
+              "c": "Functions are used to implement components but are not the main abstraction by themselves.",
+              "d": "Classes can be used for class components, but the key concept is 'component', not 'class'."
+            }
+          },
+          {
+            "number": 102,
+            "question": "What is the purpose of React props?",
+            "choices": {
+              "a": "To store local component state",
+              "b": "To pass data from parent to child components",
+              "c": "To handle HTTP requests",
+              "d": "To define component styling"
+            },
+            "correct_answer": "b",
+            "why_correct": "Props are used to pass data and configuration from parent to child components.",
+            "why_incorrect": {
+              "a": "Local state is managed by state hooks or this.state, not props.",
+              "c": "HTTP requests can be made inside components, but props are not specifically for that.",
+              "d": "Styling is handled via CSS or style props, but props in general are for data."
+            }
+          },
+          {
+            "number": 103,
+            "question": "How do you update state in a React functional component?",
+            "choices": {
+              "a": "this.setState()",
+              "b": "Using the state setter function from useState()",
+              "c": "state.update()",
+              "d": "Directly modifying the state variable"
+            },
+            "correct_answer": "b",
+            "why_correct": "In functional components, state is updated by calling the setter returned by useState().",
+            "why_incorrect": {
+              "a": "this.setState() is used in class components, not functional ones.",
+              "c": "state.update() is not a React API.",
+              "d": "Direct mutation will not trigger re-renders and is not recommended."
+            }
+          },
+          {
+            "number": 104,
+            "question": "What is the purpose of React Context?",
+            "choices": {
+              "a": "To style components",
+              "b": "To handle form submission",
+              "c": "To provide a way to pass data through the component tree without props",
+              "d": "To create reusable components"
+            },
+            "correct_answer": "c",
+            "why_correct": "Context allows sharing data across many components without passing props through each level.",
+            "why_incorrect": {
+              "a": "Styling is done via CSS or styling libraries.",
+              "b": "Form submissions are handled with event handlers, not specifically context.",
+              "d": "Components can be reusable without context; context is for shared data."
+            }
+          },
+          {
+            "number": 105,
+            "question": "What is the React useRef hook used for?",
+            "choices": {
+              "a": "To re-render components",
+              "b": "To create mutable variables that don't cause re-renders",
+              "c": "To reference external libraries",
+              "d": "To fetch data from APIs"
+            },
+            "correct_answer": "b",
+            "why_correct": "useRef stores a mutable value that persists across renders without triggering re-renders.",
+            "why_incorrect": {
+              "a": "Changing a ref does not cause a re-render.",
+              "c": "Refs can point to DOM nodes or values, but not specifically used to reference libraries.",
+              "d": "Data fetching is usually done with useEffect or other utilities, not useRef."
+            }
+          },
+          {
+            "number": 106,
+            "question": "What is the role of the key prop when rendering lists in React?",
+            "choices": {
+              "a": "It's required for all props",
+              "b": "It helps React identify which items have changed, added, or removed",
+              "c": "It defines the order of elements",
+              "d": "It sets the CSS properties for list items"
+            },
+            "correct_answer": "b",
+            "why_correct": "Keys help React efficiently update lists by tracking which items are which between renders.",
+            "why_incorrect": {
+              "a": "Only certain list elements need keys; not all props.",
+              "c": "Order is determined by array position; keys help React track identity, not order alone.",
+              "d": "CSS is not controlled by the key prop."
+            }
+          }
+        ]
+      },
+      {
+        "category": "ShadCN",
+        "questions": [
+          {
+            "number": 107,
+            "question": "What makes ShadCN different from most UI libraries?",
+            "choices": {
+              "a": "It's the only library that works with React",
+              "b": "Components are copied into your project, not imported as dependencies",
+              "c": "It only supports server-side rendering",
+              "d": "It requires a paid license"
+            },
+            "correct_answer": "b",
+            "why_correct": "ShadCN provides component source code that is copied into your project, giving full control.",
+            "why_incorrect": {
+              "a": "Many UI libraries work with React.",
+              "c": "It supports typical client-side React usage as well.",
+              "d": "It is open source and does not require a paid license."
+            }
+          },
+          {
+            "number": 108,
+            "question": "How does ShadCN handle component theming?",
+            "choices": {
+              "a": "Through inline styles only",
+              "b": "Using CSS variables defined in a global CSS file",
+              "c": "It doesn't support theming",
+              "d": "Using JavaScript objects"
+            },
+            "correct_answer": "b",
+            "why_correct": "ShadCN uses CSS variables, often defined in global styles, to support theming.",
+            "why_incorrect": {
+              "a": "Inline styles are not its primary theming mechanism.",
+              "c": "It does support theming through variables.",
+              "d": "JavaScript objects may define config, but theming itself is via CSS variables."
+            }
+          },
+          {
+            "number": 109,
+            "question": "What UI primitive library does ShadCN build upon?",
+            "choices": {
+              "a": "Material UI",
+              "b": "Bootstrap",
+              "c": "Radix UI",
+              "d": "Ant Design"
+            },
+            "correct_answer": "c",
+            "why_correct": "ShadCN components are built on top of Radix UI primitives.",
+            "why_incorrect": {
+              "a": "Material UI is a different component library.",
+              "b": "Bootstrap is a CSS framework, not the base for ShadCN.",
+              "d": "Ant Design is another UI library, not ShadCN's base."
+            }
+          }
+        ]
+      },
+      {
+        "category": "Next.js",
+        "questions": [
+          {
+            "number": 110,
+            "question": "What is Next.js primarily used for?",
+            "choices": {
+              "a": "Mobile app development",
+              "b": "Building React applications with server-side capabilities",
+              "c": "Database management",
+              "d": "Creating design systems"
+            },
+            "correct_answer": "b",
+            "why_correct": "Next.js is a React framework that supports server-side rendering, static generation, and more.",
+            "why_incorrect": {
+              "a": "Mobile apps are typically built with React Native or other frameworks.",
+              "c": "It is not a database management system.",
+              "d": "While you can build design systems with it, that's not its primary purpose."
+            }
+          },
+          {
+            "number": 111,
+            "question": "In Next.js, what is server-side rendering (SSR)?",
+            "choices": {
+              "a": "Rendering components only on the client",
+              "b": "Generating HTML on the server for each request",
+              "c": "Using a separate rendering server",
+              "d": "Pre-rendering pages at build time"
+            },
+            "correct_answer": "b",
+            "why_correct": "SSR means the HTML is generated on the server for every incoming request.",
+            "why_incorrect": {
+              "a": "This describes client-side rendering.",
+              "c": "SSR does not require a separate physical server; it's a rendering strategy.",
+              "d": "Pre-rendering at build time is static site generation, not SSR."
+            }
+          },
+          {
+            "number": 112,
+            "question": "What is the purpose of the Next.js Image component?",
+            "choices": {
+              "a": "To display images without optimization",
+              "b": "To automatically optimize and properly size images",
+              "c": "To create image galleries",
+              "d": "To edit images before display"
+            },
+            "correct_answer": "b",
+            "why_correct": "The Image component optimizes images for performance and serves appropriate sizes.",
+            "why_incorrect": {
+              "a": "It specifically aims to improve optimization.",
+              "c": "Galleries are built using multiple components, not just Image itself.",
+              "d": "It does not provide image editing features."
+            }
+          },
+          {
+            "number": 113,
+            "question": "How do you create a new Next.js project?",
+            "choices": {
+              "a": "npm init next-app",
+              "b": "npx create-next-app",
+              "c": "npm install next-app",
+              "d": "npx next create"
+            },
+            "correct_answer": "b",
+            "why_correct": "npx create-next-app scaffolds a new Next.js project.",
+            "why_incorrect": {
+              "a": "npm init next-app is not the standard command.",
+              "c": "npm install next-app would just install a package, not scaffold a project.",
+              "d": "npx next create is not a valid Next.js CLI command."
+            }
+          }
+        ]
+      },
+      {
+        "category": "Docker",
+        "questions": [
+          {
+            "number": 114,
+            "question": "What is the purpose of Docker volumes?",
+            "choices": {
+              "a": "To store Docker images",
+              "b": "To provide persistent storage for containers",
+              "c": "To network between containers",
+              "d": "To optimize Docker performance"
+            },
+            "correct_answer": "b",
+            "why_correct": "Volumes provide persistent storage that is not destroyed when a container stops.",
+            "why_incorrect": {
+              "a": "Images are stored in image layers, not volumes.",
+              "c": "Networking is handled by Docker networks, not volumes.",
+              "d": "Performance optimization is not the primary purpose of volumes."
+            }
+          },
+          {
+            "number": 115,
+            "question": "Which command lists all running Docker containers?",
+            "choices": {
+              "a": "docker list",
+              "b": "docker ps",
+              "c": "docker containers",
+              "d": "docker show"
+            },
+            "correct_answer": "b",
+            "why_correct": "docker ps lists running containers by default.",
+            "why_incorrect": {
+              "a": "docker list is not a standard Docker command.",
+              "c": "docker containers is not the correct command.",
+              "d": "docker show is not a valid listing command."
+            }
+          },
+          {
+            "number": 116,
+            "question": "What is Docker Compose used for?",
+            "choices": {
+              "a": "Writing Dockerfiles",
+              "b": "Building Docker images",
+              "c": "Defining and running multi-container applications",
+              "d": "Managing Docker networks only"
+            },
+            "correct_answer": "c",
+            "why_correct": "Docker Compose uses a YAML file to define and run multi-container Docker applications.",
+            "why_incorrect": {
+              "a": "Dockerfiles define how to build images; Compose uses them but does not write them.",
+              "b": "Images can be built via docker build; Compose focuses on services and containers.",
+              "d": "Networks can be configured in Compose, but it's not limited to that."
+            }
+          },
+          {
+            "number": 117,
+            "question": "Which Dockerfile instruction sets the base image?",
+            "choices": {
+              "a": "BASE",
+              "b": "FROM",
+              "c": "IMAGE",
+              "d": "USING"
+            },
+            "correct_answer": "b",
+            "why_correct": "FROM specifies the base image to use when building a new image.",
+            "why_incorrect": {
+              "a": "BASE is not a valid Dockerfile instruction.",
+              "c": "IMAGE is not the directive for specifying base images.",
+              "d": "USING is not a Dockerfile keyword."
+            }
+          }
+        ]
+      },
+      {
+        "category": "GitHub Actions",
+        "questions": [
+          {
+            "number": 118,
+            "question": "What type of files are GitHub Actions workflows defined in?",
+            "choices": {
+              "a": "JSON",
+              "b": "YAML",
+              "c": "XML",
+              "d": "JavaScript"
+            },
+            "correct_answer": "b",
+            "why_correct": "GitHub Actions workflows are defined in YAML files.",
+            "why_incorrect": {
+              "a": "JSON is not the standard format for workflow definition.",
+              "c": "XML is not used for GitHub Actions workflows.",
+              "d": "JavaScript may be used as actions but workflows themselves are YAML."
+            }
+          },
+          {
+            "number": 119,
+            "question": "What is a GitHub Actions artifact?",
+            "choices": {
+              "a": "A file created by a workflow",
+              "b": "A type of GitHub repository",
+              "c": "A GitHub Actions runner",
+              "d": "A workflow template"
+            },
+            "correct_answer": "a",
+            "why_correct": "Artifacts are files or bundles produced by a workflow and stored for later use.",
+            "why_incorrect": {
+              "b": "Repositories store code and other content, not artifacts specifically.",
+              "c": "Runners are machines that execute workflows, not artifacts.",
+              "d": "Workflow templates are configuration patterns, not artifacts."
+            }
+          },
+          {
+            "number": 120,
+            "question": "How do you reference environment variables in GitHub Actions?",
+            "choices": {
+              "a": "$VAR_NAME",
+              "b": "%VAR_NAME%",
+              "c": "${VAR_NAME}",
+              "d": "${{ env.VAR_NAME }}"
+            },
+            "correct_answer": "d",
+            "why_correct": "Environment variables are referenced in expressions as ${{ env.VAR_NAME }}.",
+            "why_incorrect": {
+              "a": "This is common in shell, but not the GitHub Actions expression syntax.",
+              "b": "This syntax is typical of Windows cmd, not Actions expressions.",
+              "c": "This syntax is used in some shells, not in workflow YAML expressions."
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "quiz3": {
+    "categories": [
+      {
+        "category": "Git & GitHub",
+        "questions": [
+          {
+            "number": 121,
+            "question": "What is a Git repository?",
+            "choices": {
+              "a": "A folder containing all project files and revision history",
+              "b": "A backup system for code",
+              "c": "A collaborative coding platform",
+              "d": "A version of the code on a remote server"
+            },
+            "correct_answer": "a",
+            "why_correct": "A Git repository is a directory that stores project files and their version history.",
+            "why_incorrect": {
+              "b": "Backups may be made from repos but that is not the definition of a repository.",
+              "c": "A collaborative coding platform is more like GitHub or GitLab, not a repo itself.",
+              "d": "A remote repo is one copy; a repository in general can be local or remote."
+            }
+          },
+          {
+            "number": 122,
+            "question": "What does git pull do?",
+            "choices": {
+              "a": "Upload local commits to a remote repository",
+              "b": "Download and integrate changes from a remote repository",
+              "c": "Compare differences between repositories",
+              "d": "Create a new branch from the remote repository"
+            },
+            "correct_answer": "b",
+            "why_correct": "git pull fetches changes from a remote and merges them into the current branch.",
+            "why_incorrect": {
+              "a": "Uploading commits is done by git push.",
+              "c": "Comparisons are done with git diff or similar commands.",
+              "d": "Branches are created with git branch or git checkout -b, not git pull."
+            }
+          },
+          {
+            "number": 123,
+            "question": "What is a pull request in GitHub?",
+            "choices": {
+              "a": "A way to fetch changes from a remote repository",
+              "b": "A request to pull data from an API",
+              "c": "A way to propose changes and request that someone review and merge them",
+              "d": "A method to download the entire repository"
+            },
+            "correct_answer": "c",
+            "why_correct": "A pull request is a proposal to merge changes into another branch, usually after review.",
+            "why_incorrect": {
+              "a": "Fetching changes is done by git fetch or git pull, not a pull request.",
+              "b": "This describes an API call, not a GitHub feature.",
+              "d": "Downloading a repo is done by git clone, not a pull request."
+            }
+          }
+        ]
+      },
+      {
+        "category": "Project Management & TDD",
+        "questions": [
+          {
+            "number": 124,
+            "question": "What is a key principle of Test-Driven Development?",
+            "choices": {
+              "a": "Writing documentation before code",
+              "b": "Writing tests after implementing features",
+              "c": "Writing tests before implementing code",
+              "d": "Testing only after the entire application is complete"
+            },
+            "correct_answer": "c",
+            "why_correct": "TDD emphasizes writing tests first and then implementing code to satisfy them.",
+            "why_incorrect": {
+              "a": "Documentation-first is not the core principle of TDD.",
+              "b": "Writing tests after code is the opposite of TDD.",
+              "d": "Delaying testing until the end is contrary to TDD practices."
+            }
+          },
+          {
+            "number": 125,
+            "question": "What type of test focuses on testing individual functions or components in isolation?",
+            "choices": {
+              "a": "Integration tests",
+              "b": "Unit tests",
+              "c": "End-to-end tests",
+              "d": "System tests"
+            },
+            "correct_answer": "b",
+            "why_correct": "Unit tests target small, isolated units of code like functions or methods.",
+            "why_incorrect": {
+              "a": "Integration tests verify how components work together.",
+              "c": "End-to-end tests exercise the entire system from the user perspective.",
+              "d": "System tests evaluate the integrated system as a whole."
+            }
+          }
+        ]
+      },
+      {
+        "category": "SQL (Basics)",
+        "questions": [
+          {
+            "number": 126,
+            "question": "Which SQL command is used to create a new table?",
+            "choices": {
+              "a": "ADD TABLE",
+              "b": "CREATE TABLE",
+              "c": "INSERT TABLE",
+              "d": "NEW TABLE"
+            },
+            "correct_answer": "b",
+            "why_correct": "CREATE TABLE defines a new table and its columns in the database.",
+            "why_incorrect": {
+              "a": "ADD TABLE is not valid SQL syntax.",
+              "c": "INSERT is used to add rows, not create tables.",
+              "d": "NEW TABLE is not a SQL command."
+            }
+          },
+          {
+            "number": 127,
+            "question": "What does the SQL COUNT() function do?",
+            "choices": {
+              "a": "Counts the number of rows that match a specified criterion",
+              "b": "Sums numeric values in a column",
+              "c": "Calculates the average of a column",
+              "d": "Counts the number of columns in a table"
+            },
+            "correct_answer": "a",
+            "why_correct": "COUNT() returns the number of rows that meet the given condition.",
+            "why_incorrect": {
+              "b": "SUM() adds numeric values.",
+              "c": "AVG() computes averages.",
+              "d": "COUNT() is typically used on rows or values, not columns."
+            }
+          }
+        ]
+      },
+      {
+        "category": "APIs & HTTP",
+        "questions": [
+          {
+            "number": 128,
+            "question": "Which HTTP status code indicates a client error?",
+            "choices": {
+              "a": "200",
+              "b": "301",
+              "c": "404",
+              "d": "500"
+            },
+            "correct_answer": "c",
+            "why_correct": "404 is a 4xx status code indicating a client-side error: resource not found.",
+            "why_incorrect": {
+              "a": "200 indicates success.",
+              "b": "301 indicates a permanent redirect.",
+              "d": "500 indicates a server error."
+            }
+          },
+          {
+            "number": 129,
+            "question": "What architectural style is commonly used for designing networked applications?",
+            "choices": {
+              "a": "Object-Oriented Programming",
+              "b": "Model-View-Controller",
+              "c": "REST",
+              "d": "Microservices"
+            },
+            "correct_answer": "c",
+            "why_correct": "REST is a popular architectural style for designing networked HTTP-based applications.",
+            "why_incorrect": {
+              "a": "OOP is a programming paradigm, not an API architecture style.",
+              "b": "MVC is a UI and application architecture pattern, not specifically for network APIs.",
+              "d": "Microservices is an architectural approach to system structure, not a specific network API style like REST."
+            }
+          }
+        ]
+      },
+      {
+        "category": "JSON & Developer Tools",
+        "questions": [
+          {
+            "number": 130,
+            "question": "What does JSON stand for?",
+            "choices": {
+              "a": "JavaScript Object Notation",
+              "b": "Java Standard Object Notation",
+              "c": "JavaScript Oriented Networking",
+              "d": "Java Source Object Notation"
+            },
+            "correct_answer": "a",
+            "why_correct": "JSON stands for JavaScript Object Notation.",
+            "why_incorrect": {
+              "b": "There is no 'Java Standard Object Notation' spec.",
+              "c": "JSON is not about networking specifically.",
+              "d": "JSON is not about Java source code."
+            }
+          },
+          {
+            "number": 131,
+            "question": "What is the purpose of Hatch in a development workflow?",
+            "choices": {
+              "a": "Frontend build system",
+              "b": "Python project management",
+              "c": "JavaScript linting",
+              "d": "Database migration tool"
+            },
+            "correct_answer": "b",
+            "why_correct": "Hatch is used to manage Python projects, including packaging and environments.",
+            "why_incorrect": {
+              "a": "Frontend build systems are tools like Webpack or Vite, not Hatch.",
+              "c": "Linting is handled by tools like ESLint, not Hatch.",
+              "d": "Database migrations are typically managed by tools like Alembic or Flyway."
+            }
+          },
+          {
+            "number": 132,
+            "question": "What is precommit tool used for in development?",
+            "choices": {
+              "a": "Automatically committing code changes",
+              "b": "Running checks before changes are committed",
+              "c": "Generating commit messages",
+              "d": "Scheduling code commits"
+            },
+            "correct_answer": "b",
+            "why_correct": "pre-commit runs linters and other checks before a commit is finalized.",
+            "why_incorrect": {
+              "a": "It does not auto-commit code; it hooks into the commit process.",
+              "c": "It does not generate commit messages.",
+              "d": "It does not schedule commits for later execution."
+            }
+          }
+        ]
+      },
+      {
+        "category": "HTML (W3Schools)",
+        "questions": [
+          {
+            "number": 133,
+            "question": "What HTML tag is used to define an image?",
+            "choices": {
+              "a": "<img>",
+              "b": "<picture>",
+              "c": "<image>",
+              "d": "<figure>"
+            },
+            "correct_answer": "a",
+            "why_correct": "<img> is the standard tag for embedding images.",
+            "why_incorrect": {
+              "b": "<picture> provides multiple image sources but <img> is the core tag.",
+              "c": "<image> is not a standard HTML tag.",
+              "d": "<figure> is for self-contained content like images with captions, not the image itself."
+            }
+          },
+          {
+            "number": 134,
+            "question": "Which HTML attribute specifies an alternate text for an image?",
+            "choices": {
+              "a": "src",
+              "b": "alt",
+              "c": "title",
+              "d": "desc"
+            },
+            "correct_answer": "b",
+            "why_correct": "The alt attribute provides alternative text when the image cannot be displayed.",
+            "why_incorrect": {
+              "a": "src specifies the image URL.",
+              "c": "title provides advisory information, not primary alternate text.",
+              "d": "desc is not a standard attribute on <img>."
+            }
+          },
+          {
+            "number": 135,
+            "question": "What is the purpose of the HTML5 <section> element?",
+            "choices": {
+              "a": "To define a section of navigation links",
+              "b": "To define a section in a document",
+              "c": "To create a section of form elements",
+              "d": "To style a specific section with CSS"
+            },
+            "correct_answer": "b",
+            "why_correct": "<section> is used to define a thematic grouping of content in a document.",
+            "why_incorrect": {
+              "a": "Navigation links are typically grouped in <nav>.",
+              "c": "Form sections can use many elements, not just <section>.",
+              "d": "Styling is done via CSS; <section> is a semantic container."
+            }
+          },
+          {
+            "number": 136,
+            "question": "How do you create a numbered list in HTML?",
+            "choices": {
+              "a": "<nl>",
+              "b": "<list type=\"numbered\">",
+              "c": "<ol>",
+              "d": "<ul>"
+            },
+            "correct_answer": "c",
+            "why_correct": "<ol> creates an ordered (numbered) list.",
+            "why_incorrect": {
+              "a": "<nl> is not a valid HTML tag.",
+              "b": "<list> is not a standard element.",
+              "d": "<ul> creates an unordered (bulleted) list."
+            }
+          },
+          {
+            "number": 137,
+            "question": "What does the HTML <iframe> element do?",
+            "choices": {
+              "a": "Creates an inline frame to embed another document",
+              "b": "Defines an area for image display",
+              "c": "Creates a floating frame for navigation",
+              "d": "Designates a framed section of the page"
+            },
+            "correct_answer": "a",
+            "why_correct": "<iframe> embeds another HTML document inside the current page.",
+            "why_incorrect": {
+              "b": "Image display is done via <img> or related elements.",
+              "c": "It is not specifically a navigation frame.",
+              "d": "The term 'framed section' is vague; <iframe> embeds external content."
+            }
+          },
+          {
+            "number": 138,
+            "question": "Which HTML tag is used to create a form?",
+            "choices": {
+              "a": "<input>",
+              "b": "<form>",
+              "c": "<fieldset>",
+              "d": "<formfield>"
+            },
+            "correct_answer": "b",
+            "why_correct": "<form> defines an HTML form for user input.",
+            "why_incorrect": {
+              "a": "<input> is used for individual form controls, not the form container.",
+              "c": "<fieldset> groups form controls, but does not define the form itself.",
+              "d": "<formfield> is not a standard HTML tag."
+            }
+          }
+        ]
+      },
+      {
+        "category": "CSS (W3Schools)",
+        "questions": [
+          {
+            "number": 139,
+            "question": "How do you add a background color to all <h1> elements in CSS?",
+            "choices": {
+              "a": "h1.all {background-color: #FFFFFF ;}",
+              "b": "h1 {background-color: #FFFFFF ;}",
+              "c": "all.h1 {background-color: #FFFFFF ;}",
+              "d": ".h1 {background-color: #FFFFFF ;}"
+            },
+            "correct_answer": "b",
+            "why_correct": "h1 { ... } targets all <h1> elements.",
+            "why_incorrect": {
+              "a": "h1.all would target elements with tag h1 and class all, not all h1s.",
+              "c": "all.h1 is not a meaningful selector.",
+              "d": ".h1 targets elements with class=\"h1\", not all <h1> tags."
+            }
+          },
+          {
+            "number": 140,
+            "question": "Which CSS property controls the size of text?",
+            "choices": {
+              "a": "text-size",
+              "b": "font-size",
+              "c": "text-style",
+              "d": "font-style"
+            },
+            "correct_answer": "b",
+            "why_correct": "font-size sets the size of the font.",
+            "why_incorrect": {
+              "a": "text-size is not a standard CSS property.",
+              "c": "text-style is not a standard property.",
+              "d": "font-style is used for italic/normal/oblique, not size."
+            }
+          },
+          {
+            "number": 141,
+            "question": "What is the purpose of CSS Grid?",
+            "choices": {
+              "a": "To create one-dimensional flexible layouts",
+              "b": "To create two-dimensional grid-based layouts",
+              "c": "To add grid lines to elements",
+              "d": "To create grid-based animations"
+            },
+            "correct_answer": "b",
+            "why_correct": "CSS Grid is designed for two-dimensional layouts, controlling rows and columns.",
+            "why_incorrect": {
+              "a": "One-dimensional layouts are the focus of Flexbox.",
+              "c": "Grid lines are a visual concept, but Grid's purpose is broader layout control.",
+              "d": "Animations are managed with animation and transition properties, not Grid."
+            }
+          },
+          {
+            "number": 142,
+            "question": "How do you center an element horizontally in CSS?",
+            "choices": {
+              "a": "margin: center;",
+              "b": "margin: auto 0;",
+              "c": "margin: 0 auto;",
+              "d": "align: center;"
+            },
+            "correct_answer": "c",
+            "why_correct": "margin: 0 auto; horizontally centers a block element with a defined width.",
+            "why_incorrect": {
+              "a": "margin: center; is not valid CSS.",
+              "b": "margin: auto 0; sets vertical auto margins, not horizontal.",
+              "d": "align is not a valid CSS property for centering."
+            }
+          },
+          {
+            "number": 143,
+            "question": "Which CSS property is used to control the spacing between lines of text?",
+            "choices": {
+              "a": "line-spacing",
+              "b": "text-spacing",
+              "c": "line-height",
+              "d": "text-height"
+            },
+            "correct_answer": "c",
+            "why_correct": "line-height controls the vertical spacing between lines of text.",
+            "why_incorrect": {
+              "a": "line-spacing is not a standard CSS property.",
+              "b": "text-spacing is not the property used for line spacing.",
+              "d": "text-height is not a valid CSS property."
+            }
+          },
+          {
+            "number": 144,
+            "question": "What is a CSS preprocessor?",
+            "choices": {
+              "a": "A tool that processes CSS after it's written",
+              "b": "A program that processes CSS before it's sent to the browser",
+              "c": "A browser extension for CSS",
+              "d": "A CSS optimization technique"
+            },
+            "correct_answer": "b",
+            "why_correct": "A CSS preprocessor (like SASS or LESS) compiles enhanced syntax into standard CSS before the browser sees it.",
+            "why_incorrect": {
+              "a": "They are used before, not after, delivering CSS to the browser.",
+              "c": "They are generally build tools, not browser extensions.",
+              "d": "They can aid organization but are not just an optimization trick."
+            }
+          }
+        ]
+      },
+      {
+        "category": "JavaScript (W3Schools)",
+        "questions": [
+          {
+            "number": 145,
+            "question": "How do you declare a constant in JavaScript?",
+            "choices": {
+              "a": "var NAME = value;",
+              "b": "constant NAME = value;",
+              "c": "let NAME = value;",
+              "d": "const NAME = value;"
+            },
+            "correct_answer": "d",
+            "why_correct": "const declares a constant whose binding cannot be reassigned.",
+            "why_incorrect": {
+              "a": "var declares a function-scoped variable, not a constant.",
+              "b": "constant is not a valid keyword in JavaScript.",
+              "c": "let declares a block-scoped variable that can be reassigned."
+            }
+          },
+          {
+            "number": 146,
+            "question": "What is the correct way to check if \"x\" is equal to 5 in JavaScript?",
+            "choices": {
+              "a": "if (x = 5)",
+              "b": "if (x == 5)",
+              "c": "if (x === 5)",
+              "d": "if (x equals 5)"
+            },
+            "correct_answer": "c",
+            "why_correct": "=== checks for strict equality (same value and type) and is recommended.",
+            "why_incorrect": {
+              "a": "This assigns 5 to x instead of comparing.",
+              "b": "== allows type coercion and can cause subtle bugs, though it still compares equality.",
+              "d": "This is not valid JavaScript syntax."
+            }
+          },
+          {
+            "number": 147,
+            "question": "What will the following JavaScript code return? typeof(undefined)",
+            "choices": {
+              "a": "\"object\"",
+              "b": "\"undefined\"",
+              "c": "\"null\"",
+              "d": "Error"
+            },
+            "correct_answer": "b",
+            "why_correct": "typeof undefined returns the string \"undefined\".",
+            "why_incorrect": {
+              "a": "\"object\" is returned for null, not undefined.",
+              "c": "typeof null is \"object\", not \"null\".",
+              "d": "typeof always returns a string; it does not throw here."
+            }
+          },
+          {
+            "number": 148,
+            "question": "What is a closure in JavaScript?",
+            "choices": {
+              "a": "A way to close browser windows",
+              "b": "A function bundled with references to its surrounding state",
+              "c": "A method to end JavaScript execution",
+              "d": "A built-in security feature"
+            },
+            "correct_answer": "b",
+            "why_correct": "A closure is a function that retains access to lexical scope even when called outside it.",
+            "why_incorrect": {
+              "a": "Window closing is unrelated to closures.",
+              "c": "Execution ending is not what closures do.",
+              "d": "Closures may be used in security patterns but are not inherently a security feature."
+            }
+          },
+          {
+            "number": 149,
+            "question": "How do you handle errors in JavaScript?",
+            "choices": {
+              "a": "try/catch blocks",
+              "b": "error/handle blocks",
+              "c": "check/error blocks",
+              "d": "try/error blocks"
+            },
+            "correct_answer": "a",
+            "why_correct": "try/catch is the standard syntax for handling exceptions in JavaScript.",
+            "why_incorrect": {
+              "b": "error/handle is not valid syntax.",
+              "c": "check/error is not a JavaScript construct.",
+              "d": "try/error is not valid syntax."
+            }
+          },
+          {
+            "number": 150,
+            "question": "What is the main difference between JavaScript and TypeScript?",
+            "choices": {
+              "a": "TypeScript supports classes while JavaScript doesn't",
+              "b": "TypeScript has static typing while JavaScript has dynamic typing",
+              "c": "TypeScript runs in browsers while JavaScript needs compiling",
+              "d": "TypeScript supports modules while JavaScript doesn't"
+            },
+            "correct_answer": "b",
+            "why_correct": "TypeScript adds static typing and type checking on top of JavaScript.",
+            "why_incorrect": {
+              "a": "Modern JavaScript also supports classes.",
+              "c": "TypeScript must be compiled to JavaScript to run in browsers.",
+              "d": "JavaScript also supports modules (ES modules)."
+            }
+          }
+        ]
+      },
+      {
+        "category": "SQL (W3Schools)",
+        "questions": [
+          {
+            "number": 151,
+            "question": "Which SQL statement is used to extract data from a database?",
+            "choices": {
+              "a": "EXTRACT",
+              "b": "SELECT",
+              "c": "GET",
+              "d": "OPEN"
+            },
+            "correct_answer": "b",
+            "why_correct": "SELECT is the standard SQL statement to query and extract data.",
+            "why_incorrect": {
+              "a": "EXTRACT is not the general statement for querying rows.",
+              "c": "GET is not a standard SQL keyword.",
+              "d": "OPEN is used for cursors in some systems, not general queries."
+            }
+          },
+          {
+            "number": 152,
+            "question": "How do you filter results in SQL?",
+            "choices": {
+              "a": "FILTER BY condition",
+              "b": "WHERE condition",
+              "c": "HAVING condition",
+              "d": "CONDITION BY filter"
+            },
+            "correct_answer": "b",
+            "why_correct": "WHERE restricts rows returned by the query based on a condition.",
+            "why_incorrect": {
+              "a": "FILTER BY is not standard SQL syntax.",
+              "c": "HAVING filters groups after aggregation, not base rows.",
+              "d": "CONDITION BY filter is not a valid SQL clause."
+            }
+          },
+          {
+            "number": 153,
+            "question": "What does the SQL GROUP BY clause do?",
+            "choices": {
+              "a": "Groups the result by a specific column",
+              "b": "Filters groups in a result set",
+              "c": "Orders the result by a specific column",
+              "d": "Joins tables together by a specific column"
+            },
+            "correct_answer": "a",
+            "why_correct": "GROUP BY collects rows into groups based on one or more columns.",
+            "why_incorrect": {
+              "b": "HAVING is used to filter groups after grouping.",
+              "c": "ORDER BY controls sorting, not grouping.",
+              "d": "JOIN clauses combine tables; GROUP BY does not join tables."
+            }
+          },
+          {
+            "number": 154,
+            "question": "What is an SQL injection attack?",
+            "choices": {
+              "a": "Inserting malicious code into SQL statements",
+              "b": "Forcing a database to inject new records",
+              "c": "Adding unauthorized tables to a database",
+              "d": "Overloading a database with too many queries"
+            },
+            "correct_answer": "a",
+            "why_correct": "SQL injection is a technique where attackers inject malicious SQL code into queries.",
+            "why_incorrect": {
+              "b": "Record insertion may be a consequence but not the definition.",
+              "c": "Adding tables is not the essence of injection.",
+              "d": "Overloading with queries describes a DoS attack, not injection."
+            }
+          }
+        ]
+      },
+      {
+        "category": "Hatch",
+        "questions": [
+          {
+            "number": 155,
+            "question": "What task does Hatch help with during Python development?",
+            "choices": {
+              "a": "Front-end building only",
+              "b": "Package creation and publication",
+              "c": "Cloud deployment automation",
+              "d": "Machine learning model training"
+            },
+            "correct_answer": "b",
+            "why_correct": "Hatch assists with Python package creation, configuration, and publishing.",
+            "why_incorrect": {
+              "a": "Hatch is not a frontend build tool.",
+              "c": "Cloud deployment is handled by other tools.",
+              "d": "It does not focus on ML training."
+            }
+          },
+          {
+            "number": 156,
+            "question": "What can Hatch manage for Python projects?",
+            "choices": {
+              "a": "Git repositories",
+              "b": "Development environments",
+              "c": "Authentication systems",
+              "d": "Database servers"
+            },
+            "correct_answer": "b",
+            "why_correct": "Hatch can manage project-specific development environments.",
+            "why_incorrect": {
+              "a": "Git is used for repository management, not Hatch.",
+              "c": "Authentication systems are application-level concerns, not Hatch features.",
+              "d": "Database servers are external to Hatch."
+            }
+          }
+        ]
+      },
+      {
+        "category": "FastAPI",
+        "questions": [
+          {
+            "number": 157,
+            "question": "What makes FastAPI \"fast\"?",
+            "choices": {
+              "a": "It uses compiled C++ code",
+              "b": "It's based on Starlette and Pydantic for high performance",
+              "c": "It only works with simple data types",
+              "d": "It limits the number of concurrent users"
+            },
+            "correct_answer": "b",
+            "why_correct": "FastAPI uses Starlette and Pydantic, which are designed for speed and efficiency.",
+            "why_incorrect": {
+              "a": "FastAPI is Python-based; it may rely on performant libraries but not purely C++.",
+              "c": "It supports complex nested data via Pydantic models.",
+              "d": "It does not speed up by limiting users; it is optimized for concurrency."
+            }
+          },
+          {
+            "number": 158,
+            "question": "What is a key feature of FastAPI?",
+            "choices": {
+              "a": "Built-in template rendering",
+              "b": "Automatic interactive API documentation",
+              "c": "Built-in payment processing",
+              "d": "Required database connection"
+            },
+            "correct_answer": "b",
+            "why_correct": "FastAPI automatically generates interactive API docs like Swagger UI and ReDoc.",
+            "why_incorrect": {
+              "a": "FastAPI can use templates, but this is not its key distinctive feature.",
+              "c": "Payment processing is not built in.",
+              "d": "FastAPI can work without any database at all."
+            }
+          },
+          {
+            "number": 159,
+            "question": "How does FastAPI handle request validation?",
+            "choices": {
+              "a": "Manual validation only",
+              "b": "Using Pydantic models and type hints",
+              "c": "Using regex patterns only",
+              "d": "It doesn't support validation"
+            },
+            "correct_answer": "b",
+            "why_correct": "FastAPI uses type hints and Pydantic models to automatically validate data.",
+            "why_incorrect": {
+              "a": "Manual validation is possible but not the primary approach.",
+              "c": "Regex can be used, but validation is much broader via Pydantic.",
+              "d": "FastAPI has strong built-in validation support."
+            }
+          },
+          {
+            "number": 160,
+            "question": "What is the purpose of the @app.get() decorator in FastAPI?",
+            "choices": {
+              "a": "To define a getter method",
+              "b": "To define a route that handles GET requests",
+              "c": "To retrieve data from a database",
+              "d": "To get the application configuration"
+            },
+            "correct_answer": "b",
+            "why_correct": "@app.get() declares a route function that responds to HTTP GET requests.",
+            "why_incorrect": {
+              "a": "It is not a generic 'getter' method like in OOP.",
+              "c": "The route may retrieve data, but database access is not inherent to the decorator.",
+              "d": "Configuration retrieval is not the purpose of this decorator."
+            }
+          }
+        ]
+      },
+      {
+        "category": "React",
+        "questions": [
+          {
+            "number": 161,
+            "question": "What is the React Virtual DOM?",
+            "choices": {
+              "a": "A physical DOM component",
+              "b": "A lightweight copy of the actual DOM for performance optimization",
+              "c": "A DOM that only exists in virtual reality applications",
+              "d": "The DOM created by virtual components"
+            },
+            "correct_answer": "b",
+            "why_correct": "The Virtual DOM is an in-memory representation of the real DOM used to efficiently compute updates.",
+            "why_incorrect": {
+              "a": "It is not a physical component.",
+              "c": "It is unrelated to virtual reality.",
+              "d": "While components are virtual representations, 'Virtual DOM' refers specifically to React’s diffing structure."
+            }
+          },
+          {
+            "number": 162,
+            "question": "How do you create a React functional component?",
+            "choices": {
+              "a": "By extending the React.Component class",
+              "b": "By defining a function that returns JSX",
+              "c": "By creating an instance of React.Function",
+              "d": "By using the createReactFunction() method"
+            },
+            "correct_answer": "b",
+            "why_correct": "A functional component is simply a function that returns JSX.",
+            "why_incorrect": {
+              "a": "Extending React.Component is used for class components.",
+              "c": "React.Function is not a real API.",
+              "d": "createReactFunction() is not a built-in method."
+            }
+          },
+          {
+            "number": 163,
+            "question": "What is the purpose of React's useState hook?",
+            "choices": {
+              "a": "To create static variables",
+              "b": "To manage component state",
+              "c": "To check if a component is being used",
+              "d": "To determine if a user is active"
+            },
+            "correct_answer": "b",
+            "why_correct": "useState introduces state into functional components and provides a setter.",
+            "why_incorrect": {
+              "a": "State managed by useState is not static; it can change and trigger re-renders.",
+              "c": "It does not check component usage.",
+              "d": "User activity tracking is not its purpose."
+            }
+          },
+          {
+            "number": 164,
+            "question": "When would you use the useEffect hook with an empty dependency array?",
+            "choices": {
+              "a": "When you want the effect to run on every render",
+              "b": "When you want the effect to run only when a specific state changes",
+              "c": "When you want the effect to run only once after the initial render",
+              "d": "When you want to skip the effect completely"
+            },
+            "correct_answer": "c",
+            "why_correct": "An empty dependency array means the effect runs once after the component mounts.",
+            "why_incorrect": {
+              "a": "Without a dependency array, the effect runs on every render.",
+              "b": "You would include that state variable in the dependency array.",
+              "d": "To skip the effect, you would not define it at all."
+            }
+          },
+          {
+            "number": 165,
+            "question": "What does the React Fragment allow you to do?",
+            "choices": {
+              "a": "Split a component into multiple files",
+              "b": "Group children without adding extra nodes to the DOM",
+              "c": "Cache component fragments for performance",
+              "d": "Create partial components"
+            },
+            "correct_answer": "b",
+            "why_correct": "Fragments let you return multiple children from a component without adding an extra wrapper element.",
+            "why_incorrect": {
+              "a": "File organization is independent of React Fragments.",
+              "c": "They do not specifically handle caching.",
+              "d": "They are not about 'partial components' but grouping children."
+            }
+          },
+          {
+            "number": 166,
+            "question": "How do you handle form input in React?",
+            "choices": {
+              "a": "Using the built-in Form component",
+              "b": "By directly accessing the DOM",
+              "c": "Using state to store input values",
+              "d": "Forms are not supported in React"
+            },
+            "correct_answer": "c",
+            "why_correct": "Form inputs are often controlled via state, making React the source of truth.",
+            "why_incorrect": {
+              "a": "React does not have a special built-in Form component for handling all forms.",
+              "b": "Direct DOM manipulation goes against React's declarative model.",
+              "d": "React fully supports forms through JSX elements."
+            }
+          }
+        ]
+      },
+      {
+        "category": "ShadCN",
+        "questions": [
+          {
+            "number": 167,
+            "question": "What is the primary design goal of ShadCN?",
+            "choices": {
+              "a": "To provide the most components possible",
+              "b": "To offer accessible components with control over their code",
+              "c": "To create the smallest bundle size",
+              "d": "To eliminate the need for CSS"
+            },
+            "correct_answer": "b",
+            "why_correct": "ShadCN focuses on accessible components where you own and control the source code.",
+            "why_incorrect": {
+              "a": "The library emphasizes quality and control, not sheer quantity.",
+              "c": "Bundle size is important but not the stated primary goal.",
+              "d": "It still relies on CSS (via Tailwind)."
+            }
+          },
+          {
+            "number": 168,
+            "question": "How would you install a button component from ShadCN?",
+            "choices": {
+              "a": "npm install @shadcn/button",
+              "b": "npx shadcn-ui add button",
+              "c": "npx install shadcn-button",
+              "d": "npm add @ui/shadcn-button"
+            },
+            "correct_answer": "b",
+            "why_correct": "The ShadCN CLI uses commands like npx shadcn-ui add button to copy component code.",
+            "why_incorrect": {
+              "a": "ShadCN is not typically used as a single npm package per component.",
+              "c": "This is not the documented CLI command.",
+              "d": "This is not a valid ShadCN package pattern."
+            }
+          },
+          {
+            "number": 169,
+            "question": "What technology is ShadCN built with?",
+            "choices": {
+              "a": "Vanilla CSS",
+              "b": "Tailwind CSS",
+              "c": "Styled Components",
+              "d": "CSS Modules"
+            },
+            "correct_answer": "b",
+            "why_correct": "ShadCN uses Tailwind CSS utility classes for styling.",
+            "why_incorrect": {
+              "a": "It does not rely solely on hand-written vanilla CSS.",
+              "c": "Styled Components is not its base styling solution.",
+              "d": "CSS Modules are not its primary mechanism."
+            }
+          }
+        ]
+      },
+      {
+        "category": "Next.js",
+        "questions": [
+          {
+            "number": 170,
+            "question": "What is the App Router in Next.js?",
+            "choices": {
+              "a": "A third-party routing package",
+              "b": "A new routing system introduced in Next.js 13",
+              "c": "A component for navigating between pages",
+              "d": "A tool for managing route transitions"
+            },
+            "correct_answer": "b",
+            "why_correct": "The App Router is Next.js 13's new routing system using the app/ directory and server components.",
+            "why_incorrect": {
+              "a": "It is part of Next.js core, not third-party.",
+              "c": "Navigation components use the router, but the App Router is the overall system.",
+              "d": "It does more than manage route transitions."
+            }
+          },
+          {
+            "number": 171,
+            "question": "How do you create an API route in Next.js App Router?",
+            "choices": {
+              "a": "Create a file in the pages/api directory",
+              "b": "Create a route.js file in the app/api directory",
+              "c": "Use the createApiRoute() function",
+              "d": "Add an api property to the next.config.js file"
+            },
+            "correct_answer": "b",
+            "why_correct": "In the App Router, API routes are created by defining route.js (or route.ts) files under app/api/.",
+            "why_incorrect": {
+              "a": "pages/api is used in the older Pages Router.",
+              "c": "There is no built-in createApiRoute() function.",
+              "d": "next.config.js does not define API endpoints directly."
+            }
+          },
+          {
+            "number": 172,
+            "question": "What is a Server Component in Next.js?",
+            "choices": {
+              "a": "A component that only runs on a dedicated server",
+              "b": "A component that's rendered on the server and doesn't include client-side JavaScript",
+              "c": "A component that manages server connections",
+              "d": "A backend service that serves components"
+            },
+            "correct_answer": "b",
+            "why_correct": "Server Components are rendered on the server and sent as HTML, without client-side JS bundle.",
+            "why_incorrect": {
+              "a": "They are not tied to a special server type; they are a rendering mode.",
+              "c": "They may fetch or manage data but are defined by where they render.",
+              "d": "They are components, not separate services."
+            }
+          },
+          {
+            "number": 173,
+            "question": "How do you fetch data in Next.js Server Components?",
+            "choices": {
+              "a": "Using the useEffect hook",
+              "b": "Using the useState hook",
+              "c": "By directly using async/await or fetch",
+              "d": "Using the getServerSideProps function only"
+            },
+            "correct_answer": "c",
+            "why_correct": "Server Components can use async/await and fetch directly at the top level since they run on the server.",
+            "why_incorrect": {
+              "a": "useEffect is a client-side hook and not used in Server Components.",
+              "b": "useState manages state, not data fetching alone.",
+              "d": "getServerSideProps is used in the Pages Router, not Server Components in the App Router."
+            }
+          }
+        ]
+      },
+      {
+        "category": "Docker",
+        "questions": [
+          {
+            "number": 174,
+            "question": "What is a Dockerfile?",
+            "choices": {
+              "a": "A container that stores Docker images",
+              "b": "A text file with instructions to build a Docker image",
+              "c": "A graphical interface for Docker",
+              "d": "A database for Docker configurations"
+            },
+            "correct_answer": "b",
+            "why_correct": "A Dockerfile contains the commands Docker uses to assemble an image.",
+            "why_incorrect": {
+              "a": "Images are stored separately, not in a Dockerfile.",
+              "c": "Docker GUIs exist but are not Dockerfiles.",
+              "d": "Configurations are not stored as a database in Dockerfile."
+            }
+          },
+          {
+            "number": 175,
+            "question": "Which command builds a Docker image?",
+            "choices": {
+              "a": "docker create",
+              "b": "docker build",
+              "c": "docker compile",
+              "d": "docker make"
+            },
+            "correct_answer": "b",
+            "why_correct": "docker build reads a Dockerfile to build an image.",
+            "why_incorrect": {
+              "a": "docker create creates a container from an image.",
+              "c": "docker compile is not a standard command.",
+              "d": "docker make is not a standard command."
+            }
+          },
+          {
+            "number": 176,
+            "question": "What is Docker Hub?",
+            "choices": {
+              "a": "A local development environment",
+              "b": "A registry service for Docker images",
+              "c": "A tool for managing Docker networks",
+              "d": "A container orchestration platform"
+            },
+            "correct_answer": "b",
+            "why_correct": "Docker Hub is a cloud-based registry where Docker images can be stored and shared.",
+            "why_incorrect": {
+              "a": "It is a remote registry, not a local environment.",
+              "c": "Network management is handled by Docker itself or Docker Compose, not Docker Hub.",
+              "d": "Container orchestration is provided by tools like Kubernetes or Docker Swarm."
+            }
+          },
+          {
+            "number": 177,
+            "question": "How do containers differ from virtual machines?",
+            "choices": {
+              "a": "Containers are faster and more lightweight but share the host OS kernel",
+              "b": "Containers require more resources but offer better isolation",
+              "c": "Containers run only specific applications while VMs run entire systems",
+              "d": "There is no significant difference"
+            },
+            "correct_answer": "a",
+            "why_correct": "Containers share the host OS kernel and are lighter, making them faster to start and use fewer resources.",
+            "why_incorrect": {
+              "b": "Containers typically require fewer resources than VMs.",
+              "c": "While containers usually package specific apps, this is not the key difference described in the question.",
+              "d": "There are clear architectural differences between containers and VMs."
+            }
+          }
+        ]
+      },
+      {
+        "category": "GitHub Actions",
+        "questions": [
+          {
+            "number": 178,
+            "question": "What is the purpose of GitHub Actions?",
+            "choices": {
+              "a": "To review pull requests",
+              "b": "To automate software workflows like CI/CD",
+              "c": "To host websites",
+              "d": "To manage GitHub repositories"
+            },
+            "correct_answer": "b",
+            "why_correct": "GitHub Actions is designed to automate workflows, including CI/CD pipelines.",
+            "why_incorrect": {
+              "a": "Code reviews are done by maintainers, not Actions themselves.",
+              "c": "GitHub Pages hosts sites; Actions may help deploy but hosting is separate.",
+              "d": "Repository management is core GitHub functionality, not specific to Actions."
+            }
+          },
+          {
+            "number": 179,
+            "question": "How do you specify when a GitHub Actions workflow should run?",
+            "choices": {
+              "a": "Using the \"schedule\" property",
+              "b": "Using the \"when\" property",
+              "c": "Using the \"on\" property",
+              "d": "Using the \"trigger\" property"
+            },
+            "correct_answer": "c",
+            "why_correct": "The on property defines which events (push, pull_request, schedule, etc.) trigger the workflow.",
+            "why_incorrect": {
+              "a": "schedule is one option under on, but not the main key.",
+              "b": "when is not a recognized workflow key.",
+              "d": "trigger is not the correct property name."
+            }
+          },
+          {
+            "number": 180,
+            "question": "What are GitHub Actions runners?",
+            "choices": {
+              "a": "Scripts that run workflows",
+              "b": "Servers that execute workflow jobs",
+              "c": "Special GitHub accounts with execution privileges",
+              "d": "Container images for workflow execution"
+            },
+            "correct_answer": "b",
+            "why_correct": "Runners are machines (hosted or self-hosted) that run the workflow jobs.",
+            "why_incorrect": {
+              "a": "Scripts may run on runners, but the runner itself is the machine.",
+              "c": "They are not user accounts, but compute resources.",
+              "d": "Workflows may use container images, but runners are the environment executing them."
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
